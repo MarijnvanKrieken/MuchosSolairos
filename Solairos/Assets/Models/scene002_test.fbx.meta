@@ -1,0 +1,1317 @@
+fileFormatVersion: 2
+guid: 485338f43b4f2c94d9686f8326810e96
+timeCreated: 1466276134
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: _Tristan_Sjoerds_Character:Whole_body1
+    100002: ArrowDial
+    100004: Backplate
+    100006: Bell
+    100008: Bottom1
+    100010: Bottom1 1
+    100012: Bottom1 2
+    100014: Bottom1 3
+    100016: Bottom2
+    100018: Bottom6
+    100020: Bottom7
+    100022: Bottom7 1
+    100024: Bottom8
+    100026: Bow
+    100028: Center01
+    100030: Center01 1
+    100032: Center01 2
+    100034: Center02
+    100036: Center02 1
+    100038: Center02 2
+    100040: Center03
+    100042: Center03 1
+    100044: Center03 2
+    100046: Center03 3
+    100048: Center04
+    100050: Center04 1
+    100052: Center04 2
+    100054: Center04 3
+    100056: Center05
+    100058: Center05 1
+    100060: Center05 2
+    100062: Center07
+    100064: Center07 1
+    100066: Center07 2
+    100068: CenterDial
+    100070: CenterPiece
+    100072: Deco01
+    100074: Deco01 1
+    100076: Deco01 2
+    100078: Deco01 3
+    100080: Deco01 4
+    100082: Deco01 5
+    100084: Deco01 6
+    100086: Deco01 7
+    100088: Deco01 8
+    100090: Deco010
+    100092: Deco010 1
+    100094: Deco010 2
+    100096: Deco011
+    100098: Deco011 1
+    100100: Deco011 2
+    100102: Deco011 3
+    100104: Deco02
+    100106: Deco02 1
+    100108: Deco02 2
+    100110: Deco02 3
+    100112: Deco02 4
+    100114: Deco02 5
+    100116: Deco02 6
+    100118: Deco02 7
+    100120: Deco03
+    100122: Deco03 1
+    100124: Deco03 2
+    100126: Deco03 3
+    100128: Deco03 4
+    100130: Deco03 5
+    100132: Deco03 6
+    100134: Deco03 7
+    100136: Deco03 8
+    100138: Deco04
+    100140: Deco04 1
+    100142: Deco04 2
+    100144: Deco04 3
+    100146: Deco04 4
+    100148: Deco04 5
+    100150: Deco04 6
+    100152: Deco04 7
+    100154: Deco05
+    100156: Deco05 1
+    100158: Deco05 2
+    100160: Deco07
+    100162: Deco07 1
+    100164: Deco07 2
+    100166: Deco08
+    100168: Deco08 1
+    100170: Deco08 2
+    100172: DialPiece
+    100174: DialPiece 1
+    100176: DialPiece 2
+    100178: DialPiece 3
+    100180: DialPiece 4
+    100182: DiscsPuzzle1
+    100184: floorMiddle
+    100186: floorSides
+    100188: group1
+    100190: group2
+    100192: group3
+    100194: group4
+    100196: group46
+    100198: group5
+    100200: group54
+    100202: group56_Center01
+    100204: group57
+    100206: group58
+    100208: InnerDisc
+    100210: Key
+    100212: KeyDial
+    100214: Leaf
+    100216: LeafDial
+    100218: left
+    100220: MayanBell
+    100222: MayanBell1
+    100224: MayanBell2
+    100226: MayanBell3
+    100228: MayanBell4
+    100230: MayanBell5
+    100232: MayanBell6
+    100234: MayanBell7
+    100236: MidDisc
+    100238: MonkeyHead01
+    100240: MonkeyHead02
+    100242: MonkeyHead03
+    100244: OuterDisc
+    100246: pCube1
+    100248: pCube11
+    100250: pCube11 1
+    100252: pCube13
+    100254: pCube14
+    100256: pCube15
+    100258: pCube17
+    100260: pCube2
+    100262: pCube20
+    100264: pCube22
+    100266: pCube23
+    100268: pCube24
+    100270: pCube27
+    100272: pCube28
+    100274: pCube3
+    100276: pCube52
+    100278: pCube54
+    100280: pCube55
+    100282: pCube58
+    100284: pCube59
+    100286: pCube6
+    100288: pCube66
+    100290: pCube67
+    100292: pCube68
+    100294: pCylinder1
+    100296: pCylinder11
+    100298: pCylinder12
+    100300: pCylinder15
+    100302: pCylinder4
+    100304: PicturePuzzle_all
+    100306: PicturePuzzle_border
+    100308: PicturePuzzle_pieces
+    100310: Piece1
+    100312: Piece2
+    100314: Piece3
+    100316: Piece4
+    100318: Piece5
+    100320: Piece6
+    100322: Piece7
+    100324: Piece8
+    100326: Piece9
+    100328: Pillar01
+    100330: Pillar02
+    100332: Pillar04
+    100334: Pillar05
+    100336: pillarsSmall
+    100338: polySurface11
+    100340: polySurface11 1
+    100342: polySurface13
+    100344: polySurface14
+    100346: polySurface15
+    100348: polySurface16
+    100350: polySurface19
+    100352: polySurface20
+    100354: polySurface21
+    100356: polySurface22
+    100358: polySurface23
+    100360: polySurface24
+    100362: polySurface25
+    100364: polySurface26
+    100366: polySurface27
+    100368: polySurface28
+    100370: polySurface29
+    100372: polySurface30
+    100374: polySurface31
+    100376: polySurface33
+    100378: polySurface35
+    100380: polySurface36
+    100382: polySurface37
+    100384: polySurface38
+    100386: polySurface39
+    100388: polySurface40
+    100390: polySurface41
+    100392: polySurface42
+    100394: polySurface43
+    100396: polySurface44
+    100398: polySurface45
+    100400: polySurface46
+    100402: polySurface47
+    100404: polySurface48
+    100406: polySurface49
+    100408: polySurface50
+    100410: polySurface51
+    100412: polySurface52
+    100414: polySurface53
+    100416: polySurface54
+    100418: polySurface55
+    100420: polySurface56
+    100422: polySurface57
+    100424: polySurface58
+    100426: polySurface59
+    100428: polySurface6
+    100430: polySurface60
+    100432: polySurface61
+    100434: polySurface62
+    100436: polySurface63
+    100438: polySurface64
+    100440: polySurface65
+    100442: polySurface66
+    100444: polySurface68
+    100446: polySurface69
+    100448: polySurface7
+    100450: polySurface8
+    100452: polySurface9
+    100454: pPipe1
+    100456: //RootNode
+    100458: Shield
+    100460: Shield 1
+    100462: Shield 2
+    100464: Shield 3
+    100466: Shield 4
+    100468: SimonSaysPuzzle
+    100470: skewedTiles
+    100472: Sun
+    100474: SunDial
+    100476: transform4
+    100478: transform5
+    100480: TurningWheel_DiscPuzzle_Broken
+    100482: TurningWheel_DiscPuzzle_Chipped
+    100484: TurningWheel_DiscPuzzle_normal
+    100486: TurningWheel_DiscPuzzle_normal1
+    100488: Vase
+    100490: VaseDial
+    100492: WallLamp
+    100494: WallLamp1
+    100496: WallLamp2
+    100498: WallLamp3
+    100500: WallLamp4
+    100502: WallLamp5
+    100504: WallLamps
+    100506: Whole_body1
+    100508: Whole_body2
+    100510: floor
+    100512: group102_polySurface70
+    100514: MonkeyBody
+    100516: MonkeyBody1
+    100518: MonkeyBody2
+    100520: MonkeyHands2
+    100522: Monkeys
+    100524: polySurface70
+    100526: polySurface71
+    100528: polySurface72
+    100530: polySurface73
+    100532: polySurface74
+    100534: polySurface75
+    100536: polySurface76
+    100538: Roof
+    100540: SimonSaysPuzzle_ArrowDial_Bow
+    100542: SimonSaysPuzzle_CenterDial_Bell
+    100544: SimonSaysPuzzle_KeyDial_Shield
+    100546: SimonSaysPuzzle_LeafDial_Shield
+    100548: SimonSaysPuzzle_SunDial_Shield
+    100550: SimonSaysPuzzle_VaseDial_Vase
+    100552: walls
+    100554: windows
+    400000: _Tristan_Sjoerds_Character:Whole_body1
+    400002: ArrowDial
+    400004: Backplate
+    400006: Bell
+    400008: Bottom1
+    400010: Bottom1 1
+    400012: Bottom1 2
+    400014: Bottom1 3
+    400016: Bottom2
+    400018: Bottom6
+    400020: Bottom7
+    400022: Bottom7 1
+    400024: Bottom8
+    400026: Bow
+    400028: Center01
+    400030: Center01 1
+    400032: Center01 2
+    400034: Center02
+    400036: Center02 1
+    400038: Center02 2
+    400040: Center03
+    400042: Center03 1
+    400044: Center03 2
+    400046: Center03 3
+    400048: Center04
+    400050: Center04 1
+    400052: Center04 2
+    400054: Center04 3
+    400056: Center05
+    400058: Center05 1
+    400060: Center05 2
+    400062: Center07
+    400064: Center07 1
+    400066: Center07 2
+    400068: CenterDial
+    400070: CenterPiece
+    400072: Deco01
+    400074: Deco01 1
+    400076: Deco01 2
+    400078: Deco01 3
+    400080: Deco01 4
+    400082: Deco01 5
+    400084: Deco01 6
+    400086: Deco01 7
+    400088: Deco01 8
+    400090: Deco010
+    400092: Deco010 1
+    400094: Deco010 2
+    400096: Deco011
+    400098: Deco011 1
+    400100: Deco011 2
+    400102: Deco011 3
+    400104: Deco02
+    400106: Deco02 1
+    400108: Deco02 2
+    400110: Deco02 3
+    400112: Deco02 4
+    400114: Deco02 5
+    400116: Deco02 6
+    400118: Deco02 7
+    400120: Deco03
+    400122: Deco03 1
+    400124: Deco03 2
+    400126: Deco03 3
+    400128: Deco03 4
+    400130: Deco03 5
+    400132: Deco03 6
+    400134: Deco03 7
+    400136: Deco03 8
+    400138: Deco04
+    400140: Deco04 1
+    400142: Deco04 2
+    400144: Deco04 3
+    400146: Deco04 4
+    400148: Deco04 5
+    400150: Deco04 6
+    400152: Deco04 7
+    400154: Deco05
+    400156: Deco05 1
+    400158: Deco05 2
+    400160: Deco07
+    400162: Deco07 1
+    400164: Deco07 2
+    400166: Deco08
+    400168: Deco08 1
+    400170: Deco08 2
+    400172: DialPiece
+    400174: DialPiece 1
+    400176: DialPiece 2
+    400178: DialPiece 3
+    400180: DialPiece 4
+    400182: DiscsPuzzle1
+    400184: floorMiddle
+    400186: floorSides
+    400188: group1
+    400190: group2
+    400192: group3
+    400194: group4
+    400196: group46
+    400198: group5
+    400200: group54
+    400202: group56_Center01
+    400204: group57
+    400206: group58
+    400208: InnerDisc
+    400210: Key
+    400212: KeyDial
+    400214: Leaf
+    400216: LeafDial
+    400218: left
+    400220: MayanBell
+    400222: MayanBell1
+    400224: MayanBell2
+    400226: MayanBell3
+    400228: MayanBell4
+    400230: MayanBell5
+    400232: MayanBell6
+    400234: MayanBell7
+    400236: MidDisc
+    400238: MonkeyHead01
+    400240: MonkeyHead02
+    400242: MonkeyHead03
+    400244: OuterDisc
+    400246: pCube1
+    400248: pCube11
+    400250: pCube11 1
+    400252: pCube13
+    400254: pCube14
+    400256: pCube15
+    400258: pCube17
+    400260: pCube2
+    400262: pCube20
+    400264: pCube22
+    400266: pCube23
+    400268: pCube24
+    400270: pCube27
+    400272: pCube28
+    400274: pCube3
+    400276: pCube52
+    400278: pCube54
+    400280: pCube55
+    400282: pCube58
+    400284: pCube59
+    400286: pCube6
+    400288: pCube66
+    400290: pCube67
+    400292: pCube68
+    400294: pCylinder1
+    400296: pCylinder11
+    400298: pCylinder12
+    400300: pCylinder15
+    400302: pCylinder4
+    400304: PicturePuzzle_all
+    400306: PicturePuzzle_border
+    400308: PicturePuzzle_pieces
+    400310: Piece1
+    400312: Piece2
+    400314: Piece3
+    400316: Piece4
+    400318: Piece5
+    400320: Piece6
+    400322: Piece7
+    400324: Piece8
+    400326: Piece9
+    400328: Pillar01
+    400330: Pillar02
+    400332: Pillar04
+    400334: Pillar05
+    400336: pillarsSmall
+    400338: polySurface11
+    400340: polySurface11 1
+    400342: polySurface13
+    400344: polySurface14
+    400346: polySurface15
+    400348: polySurface16
+    400350: polySurface19
+    400352: polySurface20
+    400354: polySurface21
+    400356: polySurface22
+    400358: polySurface23
+    400360: polySurface24
+    400362: polySurface25
+    400364: polySurface26
+    400366: polySurface27
+    400368: polySurface28
+    400370: polySurface29
+    400372: polySurface30
+    400374: polySurface31
+    400376: polySurface33
+    400378: polySurface35
+    400380: polySurface36
+    400382: polySurface37
+    400384: polySurface38
+    400386: polySurface39
+    400388: polySurface40
+    400390: polySurface41
+    400392: polySurface42
+    400394: polySurface43
+    400396: polySurface44
+    400398: polySurface45
+    400400: polySurface46
+    400402: polySurface47
+    400404: polySurface48
+    400406: polySurface49
+    400408: polySurface50
+    400410: polySurface51
+    400412: polySurface52
+    400414: polySurface53
+    400416: polySurface54
+    400418: polySurface55
+    400420: polySurface56
+    400422: polySurface57
+    400424: polySurface58
+    400426: polySurface59
+    400428: polySurface6
+    400430: polySurface60
+    400432: polySurface61
+    400434: polySurface62
+    400436: polySurface63
+    400438: polySurface64
+    400440: polySurface65
+    400442: polySurface66
+    400444: polySurface68
+    400446: polySurface69
+    400448: polySurface7
+    400450: polySurface8
+    400452: polySurface9
+    400454: pPipe1
+    400456: //RootNode
+    400458: Shield
+    400460: Shield 1
+    400462: Shield 2
+    400464: Shield 3
+    400466: Shield 4
+    400468: SimonSaysPuzzle
+    400470: skewedTiles
+    400472: Sun
+    400474: SunDial
+    400476: transform4
+    400478: transform5
+    400480: TurningWheel_DiscPuzzle_Broken
+    400482: TurningWheel_DiscPuzzle_Chipped
+    400484: TurningWheel_DiscPuzzle_normal
+    400486: TurningWheel_DiscPuzzle_normal1
+    400488: Vase
+    400490: VaseDial
+    400492: WallLamp
+    400494: WallLamp1
+    400496: WallLamp2
+    400498: WallLamp3
+    400500: WallLamp4
+    400502: WallLamp5
+    400504: WallLamps
+    400506: Whole_body1
+    400508: Whole_body2
+    400510: floor
+    400512: group102_polySurface70
+    400514: MonkeyBody
+    400516: MonkeyBody1
+    400518: MonkeyBody2
+    400520: MonkeyHands2
+    400522: Monkeys
+    400524: polySurface70
+    400526: polySurface71
+    400528: polySurface72
+    400530: polySurface73
+    400532: polySurface74
+    400534: polySurface75
+    400536: polySurface76
+    400538: Roof
+    400540: SimonSaysPuzzle_ArrowDial_Bow
+    400542: SimonSaysPuzzle_CenterDial_Bell
+    400544: SimonSaysPuzzle_KeyDial_Shield
+    400546: SimonSaysPuzzle_LeafDial_Shield
+    400548: SimonSaysPuzzle_SunDial_Shield
+    400550: SimonSaysPuzzle_VaseDial_Vase
+    400552: walls
+    400554: windows
+    2300000: _Tristan_Sjoerds_Character:Whole_body1
+    2300002: Backplate
+    2300004: Bell
+    2300006: Bottom1
+    2300008: Bottom1 1
+    2300010: Bottom1 2
+    2300012: Bottom1 3
+    2300014: Bottom6
+    2300016: Bottom7
+    2300018: Bottom7 1
+    2300020: Bottom8
+    2300022: Bow
+    2300024: Center01
+    2300026: Center01 1
+    2300028: Center01 2
+    2300030: Center02
+    2300032: Center02 1
+    2300034: Center02 2
+    2300036: Center03
+    2300038: Center03 1
+    2300040: Center03 2
+    2300042: Center03 3
+    2300044: Center04
+    2300046: Center04 1
+    2300048: Center04 2
+    2300050: Center04 3
+    2300052: Center05
+    2300054: Center05 1
+    2300056: Center05 2
+    2300058: Center07
+    2300060: Center07 1
+    2300062: Center07 2
+    2300064: CenterPiece
+    2300066: Deco01
+    2300068: Deco01 1
+    2300070: Deco01 2
+    2300072: Deco01 3
+    2300074: Deco01 4
+    2300076: Deco01 5
+    2300078: Deco01 6
+    2300080: Deco01 7
+    2300082: Deco01 8
+    2300084: Deco010
+    2300086: Deco010 1
+    2300088: Deco010 2
+    2300090: Deco011
+    2300092: Deco011 1
+    2300094: Deco011 2
+    2300096: Deco011 3
+    2300098: Deco02
+    2300100: Deco02 1
+    2300102: Deco02 2
+    2300104: Deco02 3
+    2300106: Deco02 4
+    2300108: Deco02 5
+    2300110: Deco02 6
+    2300112: Deco02 7
+    2300114: Deco03 1
+    2300116: Deco03 2
+    2300118: Deco03 3
+    2300120: Deco03 4
+    2300122: Deco03 5
+    2300124: Deco03 6
+    2300126: Deco03 7
+    2300128: Deco03 8
+    2300130: Deco04
+    2300132: Deco04 1
+    2300134: Deco04 2
+    2300136: Deco04 3
+    2300138: Deco04 4
+    2300140: Deco04 5
+    2300142: Deco04 6
+    2300144: Deco04 7
+    2300146: Deco05
+    2300148: Deco05 1
+    2300150: Deco05 2
+    2300152: Deco07
+    2300154: Deco07 1
+    2300156: Deco07 2
+    2300158: Deco08
+    2300160: Deco08 1
+    2300162: Deco08 2
+    2300164: DialPiece
+    2300166: DialPiece 1
+    2300168: DialPiece 2
+    2300170: DialPiece 3
+    2300172: DialPiece 4
+    2300174: floorMiddle
+    2300176: floorSides
+    2300178: InnerDisc
+    2300180: Key
+    2300182: Leaf
+    2300184: MayanBell
+    2300186: MayanBell1
+    2300188: MayanBell2
+    2300190: MayanBell3
+    2300192: MayanBell5
+    2300194: MayanBell7
+    2300196: MidDisc
+    2300198: MonkeyHead01
+    2300200: MonkeyHead02
+    2300202: MonkeyHead03
+    2300204: OuterDisc
+    2300206: pCube11
+    2300208: pCube11 1
+    2300210: pCube13
+    2300212: pCube14
+    2300214: pCube15
+    2300216: pCube17
+    2300218: pCube20
+    2300220: pCube22
+    2300222: pCube23
+    2300224: pCube24
+    2300226: pCube3
+    2300228: pCube52
+    2300230: pCube54
+    2300232: pCube55
+    2300234: pCube58
+    2300236: pCube59
+    2300238: pCube66
+    2300240: pCube67
+    2300242: pCube68
+    2300244: pCylinder11
+    2300246: pCylinder12
+    2300248: pCylinder4
+    2300250: PicturePuzzle_border
+    2300252: Piece1
+    2300254: Piece2
+    2300256: Piece3
+    2300258: Piece4
+    2300260: Piece5
+    2300262: Piece6
+    2300264: Piece7
+    2300266: Piece8
+    2300268: Piece9
+    2300270: pillarsSmall
+    2300272: polySurface11
+    2300274: polySurface11 1
+    2300276: polySurface13
+    2300278: polySurface14
+    2300280: polySurface15
+    2300282: polySurface16
+    2300284: polySurface19
+    2300286: polySurface20
+    2300288: polySurface21
+    2300290: polySurface22
+    2300292: polySurface23
+    2300294: polySurface24
+    2300296: polySurface25
+    2300298: polySurface26
+    2300300: polySurface27
+    2300302: polySurface28
+    2300304: polySurface29
+    2300306: polySurface30
+    2300308: polySurface31
+    2300310: polySurface33
+    2300312: polySurface35
+    2300314: polySurface36
+    2300316: polySurface37
+    2300318: polySurface38
+    2300320: polySurface39
+    2300322: polySurface40
+    2300324: polySurface41
+    2300326: polySurface42
+    2300328: polySurface43
+    2300330: polySurface44
+    2300332: polySurface45
+    2300334: polySurface46
+    2300336: polySurface47
+    2300338: polySurface48
+    2300340: polySurface49
+    2300342: polySurface50
+    2300344: polySurface51
+    2300346: polySurface52
+    2300348: polySurface53
+    2300350: polySurface54
+    2300352: polySurface55
+    2300354: polySurface56
+    2300356: polySurface57
+    2300358: polySurface58
+    2300360: polySurface59
+    2300362: polySurface6
+    2300364: polySurface61
+    2300366: polySurface62
+    2300368: polySurface63
+    2300370: polySurface65
+    2300372: polySurface66
+    2300374: polySurface68
+    2300376: polySurface7
+    2300378: polySurface8
+    2300380: polySurface9
+    2300382: Shield
+    2300384: Shield 1
+    2300386: Shield 2
+    2300388: Shield 3
+    2300390: Shield 4
+    2300392: Sun
+    2300394: TurningWheel_DiscPuzzle_Broken
+    2300396: TurningWheel_DiscPuzzle_Chipped
+    2300398: TurningWheel_DiscPuzzle_normal
+    2300400: TurningWheel_DiscPuzzle_normal1
+    2300402: Vase
+    2300404: WallLamp
+    2300406: WallLamp1
+    2300408: WallLamp2
+    2300410: WallLamp3
+    2300412: WallLamp4
+    2300414: WallLamp5
+    2300416: Whole_body1
+    2300418: Whole_body2
+    2300420: floor
+    2300422: group102_polySurface70
+    2300424: MonkeyBody
+    2300426: MonkeyBody1
+    2300428: MonkeyBody2
+    2300430: polySurface70
+    2300432: polySurface71
+    2300434: polySurface72
+    2300436: polySurface73
+    2300438: polySurface74
+    2300440: polySurface75
+    2300442: polySurface76
+    2300444: Roof
+    2300446: SimonSaysPuzzle_ArrowDial_Bow
+    2300448: SimonSaysPuzzle_CenterDial_Bell
+    2300450: SimonSaysPuzzle_KeyDial_Shield
+    2300452: SimonSaysPuzzle_LeafDial_Shield
+    2300454: SimonSaysPuzzle_SunDial_Shield
+    2300456: SimonSaysPuzzle_VaseDial_Vase
+    2300458: walls
+    3300000: _Tristan_Sjoerds_Character:Whole_body1
+    3300002: Backplate
+    3300004: Bell
+    3300006: Bottom1
+    3300008: Bottom1 1
+    3300010: Bottom1 2
+    3300012: Bottom1 3
+    3300014: Bottom6
+    3300016: Bottom7
+    3300018: Bottom7 1
+    3300020: Bottom8
+    3300022: Bow
+    3300024: Center01
+    3300026: Center01 1
+    3300028: Center01 2
+    3300030: Center02
+    3300032: Center02 1
+    3300034: Center02 2
+    3300036: Center03
+    3300038: Center03 1
+    3300040: Center03 2
+    3300042: Center03 3
+    3300044: Center04
+    3300046: Center04 1
+    3300048: Center04 2
+    3300050: Center04 3
+    3300052: Center05
+    3300054: Center05 1
+    3300056: Center05 2
+    3300058: Center07
+    3300060: Center07 1
+    3300062: Center07 2
+    3300064: CenterPiece
+    3300066: Deco01
+    3300068: Deco01 1
+    3300070: Deco01 2
+    3300072: Deco01 3
+    3300074: Deco01 4
+    3300076: Deco01 5
+    3300078: Deco01 6
+    3300080: Deco01 7
+    3300082: Deco01 8
+    3300084: Deco010
+    3300086: Deco010 1
+    3300088: Deco010 2
+    3300090: Deco011
+    3300092: Deco011 1
+    3300094: Deco011 2
+    3300096: Deco011 3
+    3300098: Deco02
+    3300100: Deco02 1
+    3300102: Deco02 2
+    3300104: Deco02 3
+    3300106: Deco02 4
+    3300108: Deco02 5
+    3300110: Deco02 6
+    3300112: Deco02 7
+    3300114: Deco03 1
+    3300116: Deco03 2
+    3300118: Deco03 3
+    3300120: Deco03 4
+    3300122: Deco03 5
+    3300124: Deco03 6
+    3300126: Deco03 7
+    3300128: Deco03 8
+    3300130: Deco04
+    3300132: Deco04 1
+    3300134: Deco04 2
+    3300136: Deco04 3
+    3300138: Deco04 4
+    3300140: Deco04 5
+    3300142: Deco04 6
+    3300144: Deco04 7
+    3300146: Deco05
+    3300148: Deco05 1
+    3300150: Deco05 2
+    3300152: Deco07
+    3300154: Deco07 1
+    3300156: Deco07 2
+    3300158: Deco08
+    3300160: Deco08 1
+    3300162: Deco08 2
+    3300164: DialPiece
+    3300166: DialPiece 1
+    3300168: DialPiece 2
+    3300170: DialPiece 3
+    3300172: DialPiece 4
+    3300174: floorMiddle
+    3300176: floorSides
+    3300178: InnerDisc
+    3300180: Key
+    3300182: Leaf
+    3300184: MayanBell
+    3300186: MayanBell1
+    3300188: MayanBell2
+    3300190: MayanBell3
+    3300192: MayanBell5
+    3300194: MayanBell7
+    3300196: MidDisc
+    3300198: MonkeyHead01
+    3300200: MonkeyHead02
+    3300202: MonkeyHead03
+    3300204: OuterDisc
+    3300206: pCube11
+    3300208: pCube11 1
+    3300210: pCube13
+    3300212: pCube14
+    3300214: pCube15
+    3300216: pCube17
+    3300218: pCube20
+    3300220: pCube22
+    3300222: pCube23
+    3300224: pCube24
+    3300226: pCube3
+    3300228: pCube52
+    3300230: pCube54
+    3300232: pCube55
+    3300234: pCube58
+    3300236: pCube59
+    3300238: pCube66
+    3300240: pCube67
+    3300242: pCube68
+    3300244: pCylinder11
+    3300246: pCylinder12
+    3300248: pCylinder4
+    3300250: PicturePuzzle_border
+    3300252: Piece1
+    3300254: Piece2
+    3300256: Piece3
+    3300258: Piece4
+    3300260: Piece5
+    3300262: Piece6
+    3300264: Piece7
+    3300266: Piece8
+    3300268: Piece9
+    3300270: pillarsSmall
+    3300272: polySurface11
+    3300274: polySurface11 1
+    3300276: polySurface13
+    3300278: polySurface14
+    3300280: polySurface15
+    3300282: polySurface16
+    3300284: polySurface19
+    3300286: polySurface20
+    3300288: polySurface21
+    3300290: polySurface22
+    3300292: polySurface23
+    3300294: polySurface24
+    3300296: polySurface25
+    3300298: polySurface26
+    3300300: polySurface27
+    3300302: polySurface28
+    3300304: polySurface29
+    3300306: polySurface30
+    3300308: polySurface31
+    3300310: polySurface33
+    3300312: polySurface35
+    3300314: polySurface36
+    3300316: polySurface37
+    3300318: polySurface38
+    3300320: polySurface39
+    3300322: polySurface40
+    3300324: polySurface41
+    3300326: polySurface42
+    3300328: polySurface43
+    3300330: polySurface44
+    3300332: polySurface45
+    3300334: polySurface46
+    3300336: polySurface47
+    3300338: polySurface48
+    3300340: polySurface49
+    3300342: polySurface50
+    3300344: polySurface51
+    3300346: polySurface52
+    3300348: polySurface53
+    3300350: polySurface54
+    3300352: polySurface55
+    3300354: polySurface56
+    3300356: polySurface57
+    3300358: polySurface58
+    3300360: polySurface59
+    3300362: polySurface6
+    3300364: polySurface61
+    3300366: polySurface62
+    3300368: polySurface63
+    3300370: polySurface65
+    3300372: polySurface66
+    3300374: polySurface68
+    3300376: polySurface7
+    3300378: polySurface8
+    3300380: polySurface9
+    3300382: Shield
+    3300384: Shield 1
+    3300386: Shield 2
+    3300388: Shield 3
+    3300390: Shield 4
+    3300392: Sun
+    3300394: TurningWheel_DiscPuzzle_Broken
+    3300396: TurningWheel_DiscPuzzle_Chipped
+    3300398: TurningWheel_DiscPuzzle_normal
+    3300400: TurningWheel_DiscPuzzle_normal1
+    3300402: Vase
+    3300404: WallLamp
+    3300406: WallLamp1
+    3300408: WallLamp2
+    3300410: WallLamp3
+    3300412: WallLamp4
+    3300414: WallLamp5
+    3300416: Whole_body1
+    3300418: Whole_body2
+    3300420: floor
+    3300422: group102_polySurface70
+    3300424: MonkeyBody
+    3300426: MonkeyBody1
+    3300428: MonkeyBody2
+    3300430: polySurface70
+    3300432: polySurface71
+    3300434: polySurface72
+    3300436: polySurface73
+    3300438: polySurface74
+    3300440: polySurface75
+    3300442: polySurface76
+    3300444: Roof
+    3300446: SimonSaysPuzzle_ArrowDial_Bow
+    3300448: SimonSaysPuzzle_CenterDial_Bell
+    3300450: SimonSaysPuzzle_KeyDial_Shield
+    3300452: SimonSaysPuzzle_LeafDial_Shield
+    3300454: SimonSaysPuzzle_SunDial_Shield
+    3300456: SimonSaysPuzzle_VaseDial_Vase
+    3300458: walls
+    4300000: polySurface15
+    4300002: polySurface16
+    4300004: polySurface22
+    4300006: polySurface47
+    4300008: polySurface6
+    4300010: polySurface7
+    4300012: polySurface8
+    4300014: polySurface19
+    4300016: polySurface24
+    4300018: polySurface25
+    4300020: polySurface26
+    4300022: polySurface27
+    4300024: polySurface28
+    4300026: polySurface29
+    4300028: polySurface30
+    4300030: polySurface31
+    4300032: polySurface33
+    4300034: polySurface35
+    4300036: polySurface36
+    4300038: polySurface37
+    4300040: polySurface38
+    4300042: polySurface39
+    4300044: polySurface40
+    4300046: polySurface41
+    4300048: polySurface42
+    4300050: polySurface43
+    4300052: polySurface44
+    4300054: polySurface45
+    4300056: polySurface46
+    4300058: polySurface48
+    4300060: polySurface49
+    4300062: polySurface50
+    4300064: polySurface51
+    4300066: polySurface52
+    4300068: polySurface53
+    4300070: polySurface54
+    4300072: polySurface55
+    4300074: polySurface65
+    4300076: pCube3
+    4300078: polySurface13
+    4300080: polySurface14
+    4300082: _Tristan_Sjoerds_Character:Whole_body1
+    4300084: Whole_body1
+    4300086: Whole_body2
+    4300088: MonkeyHead01
+    4300090: Piece1
+    4300092: Piece2
+    4300094: Piece3
+    4300096: Piece4
+    4300098: Piece5
+    4300100: Piece6
+    4300102: Piece7
+    4300104: Piece8
+    4300106: Piece9
+    4300108: PicturePuzzle_border
+    4300110: MonkeyHead02
+    4300112: MonkeyHead03
+    4300114: pCube13
+    4300116: pCube14
+    4300118: pCube15
+    4300120: pCube17
+    4300122: polySurface11
+    4300124: pCube11
+    4300126: polySurface9
+    4300128: polySurface23
+    4300130: polySurface11
+    4300132: pCube11
+    4300134: pCube24
+    4300136: pCube66
+    4300138: pCube67
+    4300140: polySurface20
+    4300142: polySurface21
+    4300144: polySurface58
+    4300146: polySurface59
+    4300148: pCube20
+    4300150: pCube22
+    4300152: pCube23
+    4300154: pCube52
+    4300156: pCube54
+    4300158: pCube55
+    4300160: pCube58
+    4300162: pCube59
+    4300164: pCube68
+    4300166: Deco01
+    4300168: Deco02
+    4300170: Deco03
+    4300172: Deco04
+    4300174: Center03
+    4300176: Deco05
+    4300178: Center01
+    4300180: Center02
+    4300182: Center04
+    4300184: Center05
+    4300186: Center07
+    4300188: Deco07
+    4300190: Deco08
+    4300192: Deco010
+    4300194: Bottom1
+    4300196: Deco011
+    4300198: Bottom7
+    4300200: Deco01
+    4300202: Deco02
+    4300204: Deco03
+    4300206: Deco04
+    4300208: Center03
+    4300210: Deco05
+    4300212: Center01
+    4300214: Center02
+    4300216: Center04
+    4300218: Center05
+    4300220: Center07
+    4300222: Deco07
+    4300224: Deco08
+    4300226: Deco010
+    4300228: Bottom1
+    4300230: Deco011
+    4300232: Bottom6
+    4300234: Bottom8
+    4300236: Deco01
+    4300238: Center03
+    4300240: Bottom1
+    4300242: Deco011
+    4300244: Center04
+    4300246: pCylinder4
+    4300248: pCylinder11
+    4300250: pCylinder12
+    4300252: polySurface57
+    4300254: MayanBell
+    4300256: MayanBell1
+    4300258: MayanBell2
+    4300260: MayanBell3
+    4300262: MayanBell5
+    4300264: polySurface56
+    4300266: TurningWheel_DiscPuzzle_Chipped
+    4300268: TurningWheel_DiscPuzzle_normal
+    4300270: TurningWheel_DiscPuzzle_Broken
+    4300272: TurningWheel_DiscPuzzle_normal1
+    4300274: polySurface62
+    4300276: polySurface63
+    4300278: polySurface61
+    4300280: Deco01
+    4300282: Deco02
+    4300284: Deco03
+    4300286: Deco04
+    4300288: Center03
+    4300290: Deco05
+    4300292: Center01
+    4300294: Center02
+    4300296: Center04
+    4300298: Center05
+    4300300: Center07
+    4300302: Deco07
+    4300304: Deco08
+    4300306: Deco010
+    4300308: Bottom1
+    4300310: Deco011
+    4300312: Bottom7
+    4300314: MayanBell7
+    4300316: floorMiddle
+    4300318: floorSides
+    4300320: WallLamp
+    4300322: WallLamp1
+    4300324: WallLamp2
+    4300326: WallLamp3
+    4300328: WallLamp4
+    4300330: WallLamp5
+    4300332: polySurface66
+    4300334: polySurface68
+    4300336: InnerDisc
+    4300338: MidDisc
+    4300340: OuterDisc
+    4300342: pillarsSmall
+    4300344: Bell
+    4300346: CenterPiece
+    4300348: Shield
+    4300350: DialPiece
+    4300352: Deco01
+    4300354: Deco02
+    4300356: Deco03
+    4300358: Deco04
+    4300360: Leaf
+    4300362: Shield
+    4300364: DialPiece
+    4300366: Deco04
+    4300368: Deco03
+    4300370: Deco02
+    4300372: Deco01
+    4300374: Key
+    4300376: Shield
+    4300378: DialPiece
+    4300380: Deco04
+    4300382: Deco03
+    4300384: Deco02
+    4300386: Deco01
+    4300388: Vase
+    4300390: Shield
+    4300392: DialPiece
+    4300394: Deco04
+    4300396: Deco03
+    4300398: Deco02
+    4300400: Deco01
+    4300402: Sun
+    4300404: Bow
+    4300406: Shield
+    4300408: DialPiece
+    4300410: Deco01
+    4300412: Deco02
+    4300414: Deco03
+    4300416: Deco04
+    4300418: Backplate
+    4300420: walls
+    4300422: floor
+    4300424: Roof
+    4300426: polySurface71
+    4300428: polySurface73
+    4300430: polySurface72
+    4300432: polySurface74
+    4300434: polySurface70
+    4300436: SimonSaysPuzzle_CenterDial_Bell
+    4300438: SimonSaysPuzzle_LeafDial_Shield
+    4300440: SimonSaysPuzzle_KeyDial_Shield
+    4300442: SimonSaysPuzzle_VaseDial_Vase
+    4300444: SimonSaysPuzzle_SunDial_Shield
+    4300446: SimonSaysPuzzle_ArrowDial_Bow
+    4300448: group102_polySurface70
+    4300450: MonkeyBody
+    4300452: MonkeyBody1
+    4300454: MonkeyBody2
+    4300456: polySurface75
+    4300458: polySurface76
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
