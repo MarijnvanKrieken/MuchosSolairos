@@ -273,7 +273,7 @@ GameObject:
   - 65: {fileID: 821538129}
   - 23: {fileID: 821538128}
   - 82: {fileID: 821538132}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RuneBb
   m_TagString: Rune
   m_Icon: {fileID: 0}
@@ -424,7 +424,7 @@ GameObject:
   - 65: {fileID: 899063935}
   - 23: {fileID: 899063934}
   - 82: {fileID: 899063938}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RuneC
   m_TagString: Rune
   m_Icon: {fileID: 0}
@@ -792,7 +792,7 @@ GameObject:
   - 65: {fileID: 1712033076}
   - 23: {fileID: 1712033075}
   - 82: {fileID: 1712033079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RuneG
   m_TagString: Rune
   m_Icon: {fileID: 0}
@@ -1011,7 +1011,7 @@ GameObject:
   - 65: {fileID: 1950175417}
   - 23: {fileID: 1950175416}
   - 82: {fileID: 1950175420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RuneF
   m_TagString: Rune
   m_Icon: {fileID: 0}
@@ -1238,7 +1238,7 @@ GameObject:
   - 65: {fileID: 2021557466}
   - 23: {fileID: 2021557465}
   - 82: {fileID: 2021557469}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RuneE
   m_TagString: Rune
   m_Icon: {fileID: 0}
