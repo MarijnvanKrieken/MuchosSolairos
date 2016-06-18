@@ -7,6 +7,9 @@ public class fixedPlace : MonoBehaviour {
     int[] allowedObjectTypes;
 
     [SerializeField]
+    GameObject winningObject;
+
+    [SerializeField]
     Vector3 placeForAllowedObjects;
 
     [SerializeField]

@@ -22,6 +22,9 @@ public class HoldableObject : MonoBehaviour {
 
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 
+        
+
+
         toHold = transform.DOLocalMove(Vector3.zero, 2.0f);
         toHold.SetEase(Ease.OutElastic);
 
@@ -40,7 +43,7 @@ public class HoldableObject : MonoBehaviour {
         
         toNew = transform.DOPath(pathNodes, 2.0f);
         toNew.SetEase(Ease.InOutQuint);
-        //toNew.OnKill(() => GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None);
+        
 
         if (!stay)        
             toNew.OnComplete(() =>GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None);
