@@ -26,13 +26,14 @@ public class HoldableObject : MonoBehaviour {
 
     public void SendBack(Vector3 endPos)
     {
-        Vector3 firstNode;
-        Vector3 secondNode;
-        
-        //GetComponent<Renderer>().bounds.min
+        Vector3[] pathNodes = new Vector3[2];
+
+        pathNodes[0] = endPos * (endPos.magnitude - GetComponent<Renderer>().bounds.min.z / endPos.magnitude);
+        pathNodes[1] = pathNodes[0] * 0.5f;
 
         toHold.Kill();
-        toNew = transform.DOMove(endPos, 2.0f);
+        //toNew = transform.DOMove(endPos, 2.0f);
+        toNew = transform.DOPath(pathNodes, 2.0f);
         toNew.OnKill(() => GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None);
         toNew.OnComplete(() =>GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None);
     }
