@@ -15,23 +15,49 @@ public class Telekinesis : MonoBehaviour {
 	void Start () {
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
+    void CursorColor()
+    {
+        //cursor
         RaycastHit hitInfo1;
 
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), out hitInfo1, 200.0f))
         {
+            //when not holding object
+            if (holdingObject == null)
+            {
+                if (hitInfo1.collider.GetComponent<HoldableObject>() != null)
+                {
+                    cursor.color = Color.black;
 
-            if (hitInfo1.collider.GetComponent<Rigidbody>() != null)
-                cursor.color = Color.black;
-            else
-                cursor.color = Color.white;
+                    return;
+                }
+
+            }
+            else //when holding object
+            {
+                if (hitInfo1.collider.gameObject != holdingObject)
+                {
+                    cursor.color = Color.blue;
+                    return;
+                }
+                    
+            }
+            
         }
-        else
-            cursor.color = Color.white;
 
+        //else
+        cursor.color = Color.white;
+    }
+	
+	// Update is called once per frame
+	void Update () {
+
+
+        CursorColor();
+
+
+        //on tap
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hitInfo;
@@ -46,12 +72,29 @@ public class Telekinesis : MonoBehaviour {
                     holdingObject.GetComponent<HoldableObject>().SendToHold();
                     
                 }
-                else if (holdingObject && hitInfo.collider.gameObject != holdingObject)
+
+                if (holdingObject != null)
                 {
+                    if (hitInfo.collider.gameObject == holdingObject)
+                        return;
+
                     holdingObject.transform.parent = null;
-                    holdingObject.GetComponent<HoldableObject>().SendBack(hitInfo.point);
+
+                    Vector3 sendToPlace = Vector3.zero;
+                    bool stayAfter = false;
+
+                    if (hitInfo.collider.GetComponent<fixedPlace>())
+                    {
+                        hitInfo.collider.GetComponent<fixedPlace>().ReturnGoToPlace(holdingObject.GetComponent<HoldableObject>().objectType, out sendToPlace, out stayAfter);
+                    }
+                    else
+                        sendToPlace = hitInfo.point;
+
+                    
+                    holdingObject.GetComponent<HoldableObject>().SendBack(sendToPlace, stayAfter);
                     holdingObject = null;
                 }
+
             }
 
 
