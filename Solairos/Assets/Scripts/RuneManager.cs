@@ -3,8 +3,10 @@ using UnityEngine;
 
 public class RuneManager: MonoBehaviour
 {
-	public List<GameObject> notes;
-	public List<GameObject> endNotes;
+	public List<GameObject> melody;
+	public List<GameObject> allNotes;
+
+	private List<GameObject> clickedNotes;
 	// Use this for initialization
 	void Start()
 	{
@@ -15,5 +17,30 @@ public class RuneManager: MonoBehaviour
 	void Update()
 	{
 
+	}
+
+	public void RuneG()
+	{
+		clickedNotes.Add(allNotes[0]);
+	}
+
+	public void RuneBb()
+	{
+		clickedNotes.Add(allNotes[0]);
+	}
+
+	public void RuneC()
+	{
+		clickedNotes.Add(allNotes[0]);
+	}
+
+	public void RuneE()
+	{
+		clickedNotes.Add(allNotes[0]);
+	}
+
+	public void RuneF()
+	{
+		clickedNotes.Add(allNotes[0]);
 	}
 }
