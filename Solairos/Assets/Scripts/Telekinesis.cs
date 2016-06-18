@@ -32,6 +32,11 @@ public class Telekinesis: MonoBehaviour
 					cursor.color = Color.black;
 					return;
 				}
+				if(hitInfo1.transform.tag == "Rune")
+				{
+					cursor.color = Color.black;
+					return;
+				}
 				if(hitInfo1.collider.GetComponent<HoldableObject>() != null)
 				{
 					cursor.color = Color.black;

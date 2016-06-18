@@ -62,28 +62,35 @@ public class DiskManager: MonoBehaviour
 				//customDebug.AddDebug("ray cast");
 				if(canRotate)
 				{
-					canRotate = false;
-					stonesound.Play();
+					bool startCanRotate = false;
 					//customDebug.AddDebug("rotate");
 					if(hit.transform.gameObject.name == gear1.name)
 					{
 						gear1Tween = innerDisk.transform.DORotate(new Vector3(0f, gear1Move.x * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						gear2Tween = midDisk.transform.DORotate(new Vector3(0f, gear1Move.y * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						gear3Tween = outerDisk.transform.DORotate(new Vector3(0f, gear1Move.z * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
+						startCanRotate = true;
 					}
 					else if(hit.transform.gameObject.name == gear2.name)
 					{
 						gear1Tween = innerDisk.transform.DORotate(new Vector3(0f, gear2Move.x * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						gear2Tween = midDisk.transform.DORotate(new Vector3(0f, gear2Move.y * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						gear3Tween = outerDisk.transform.DORotate(new Vector3(0f, gear2Move.z * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
+						startCanRotate = true;
 					}
 					else if(hit.transform.gameObject.name == gear3.name)
 					{
 						gear1Tween = innerDisk.transform.DORotate(new Vector3(0f, gear3Move.x * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						gear2Tween = midDisk.transform.DORotate(new Vector3(0f, gear3Move.y * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						gear3Tween = outerDisk.transform.DORotate(new Vector3(0f, gear3Move.z * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
+						startCanRotate = true;
 					}
-					StartCoroutine("canRotateTrue");
+					if(startCanRotate)
+					{
+						StartCoroutine("canRotateTrue");
+						stonesound.Play();
+						canRotate = false;
+					}
 				}
 			}
 		}

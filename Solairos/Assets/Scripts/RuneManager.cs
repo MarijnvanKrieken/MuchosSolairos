@@ -35,7 +35,7 @@ public class RuneManager: MonoBehaviour
 				if(hit.transform.gameObject.layer == LayerMask.NameToLayer("Runes") && rotationSpeed == 0f)
 				{
 					AudioSource runeSound = hit.transform.GetComponent<AudioSource>();
-					Invoke(hit.transform.name, 0f);
+					Invoke(hit.transform.name, 0f); //function is named to the game object name
 					runeSound.Play();
 				}
 			}
@@ -53,12 +53,17 @@ public class RuneManager: MonoBehaviour
 				//debug.AddDebug("clicked melody is wrong, reseting...");
 				//clear clicked notes and play reset and start sound
 				StartCoroutine("PlayStartNote");
+				return;
 			}
-			else if(clickedNotes.Count == 5) //notes are clicked right and 5 notes met
+			if(clickedNotes.Count == 5 && clickedNotes[4] == melody[4]) //notes are clicked right and 5 notes met
 			{
 				StartCoroutine("PlayLastFive");
 				rotationSpeed = 100f;
 				//debug.AddDebug("Puzzle complete!");
+			}
+			else if(clickedNotes[4] != melody[4])
+			{
+				StartCoroutine("PlayStartNote");
 			}
 		}
 	}
@@ -144,6 +149,7 @@ public class RuneManager: MonoBehaviour
 			melody[i].GetComponent<AudioSource>().Play();
 			yield return new WaitForSeconds(0.5f);
 		}
+		StartCoroutine("PlayStartNote");
 		yield return null;
 	}
 
@@ -168,45 +174,75 @@ public class RuneManager: MonoBehaviour
 		yield return null;
 	}*/
 
+	//old runes
 	public void RuneG()
 	{
-		//debug.AddDebug("RuneG");
 		clickedNotes.Add(allNotes[0]);
 		CheckNotes();
 	}
 
 	public void RuneBb()
 	{
-		//debug.AddDebug("RuneBb");
 		clickedNotes.Add(allNotes[1]);
 		CheckNotes();
 	}
 
 	public void RuneC()
 	{
-		//debug.AddDebug("RuneC");
 		clickedNotes.Add(allNotes[2]);
 		CheckNotes();
 	}
 
 	public void RuneE()
 	{
-		//debug.AddDebug("RuneE");
 		clickedNotes.Add(allNotes[3]);
 		CheckNotes();
 	}
 
 	public void RuneF()
 	{
-		//debug.AddDebug("RuneF");
 		clickedNotes.Add(allNotes[4]);
 		CheckNotes();
 	}
 
 	public void RuneMid()
 	{
-		//debug.AddDebug("Notes cleared");
-		//StartCoroutine("PlayStartNote");
+		StartCoroutine("PlayFirstFive");
+	}
+
+	//new runes
+	public void SimonSaysPuzzle_SunDial_Shield()
+	{
+		clickedNotes.Add(allNotes[0]);
+		CheckNotes();
+	}
+
+	public void SimonSaysPuzzle_VaseDial_Vase()
+	{
+		clickedNotes.Add(allNotes[1]);
+		CheckNotes();
+	}
+
+	public void SimonSaysPuzzle_KeyDial_Shield()
+	{
+		clickedNotes.Add(allNotes[2]);
+		CheckNotes();
+	}
+
+	public void SimonSaysPuzzle_LeafDial_Shield()
+	{
+		clickedNotes.Add(allNotes[3]);
+		CheckNotes();
+	}
+
+	public void SimonSaysPuzzle_ArrowDial_Bow()
+	{
+		clickedNotes.Add(allNotes[4]);
+		CheckNotes();
+	}
+
+	public void SimonSaysPuzzle_CenterDial_Bell()
+	{
 		StartCoroutine("PlayFirstFive");
 	}
 }

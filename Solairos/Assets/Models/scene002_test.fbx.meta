@@ -260,6 +260,29 @@ ModelImporter:
     100504: WallLamps
     100506: Whole_body1
     100508: Whole_body2
+    100510: floor
+    100512: group102_polySurface70
+    100514: MonkeyBody
+    100516: MonkeyBody1
+    100518: MonkeyBody2
+    100520: MonkeyHands2
+    100522: Monkeys
+    100524: polySurface70
+    100526: polySurface71
+    100528: polySurface72
+    100530: polySurface73
+    100532: polySurface74
+    100534: polySurface75
+    100536: polySurface76
+    100538: Roof
+    100540: SimonSaysPuzzle_ArrowDial_Bow
+    100542: SimonSaysPuzzle_CenterDial_Bell
+    100544: SimonSaysPuzzle_KeyDial_Shield
+    100546: SimonSaysPuzzle_LeafDial_Shield
+    100548: SimonSaysPuzzle_SunDial_Shield
+    100550: SimonSaysPuzzle_VaseDial_Vase
+    100552: walls
+    100554: windows
     400000: _Tristan_Sjoerds_Character:Whole_body1
     400002: ArrowDial
     400004: Backplate
@@ -515,6 +538,29 @@ ModelImporter:
     400504: WallLamps
     400506: Whole_body1
     400508: Whole_body2
+    400510: floor
+    400512: group102_polySurface70
+    400514: MonkeyBody
+    400516: MonkeyBody1
+    400518: MonkeyBody2
+    400520: MonkeyHands2
+    400522: Monkeys
+    400524: polySurface70
+    400526: polySurface71
+    400528: polySurface72
+    400530: polySurface73
+    400532: polySurface74
+    400534: polySurface75
+    400536: polySurface76
+    400538: Roof
+    400540: SimonSaysPuzzle_ArrowDial_Bow
+    400542: SimonSaysPuzzle_CenterDial_Bell
+    400544: SimonSaysPuzzle_KeyDial_Shield
+    400546: SimonSaysPuzzle_LeafDial_Shield
+    400548: SimonSaysPuzzle_SunDial_Shield
+    400550: SimonSaysPuzzle_VaseDial_Vase
+    400552: walls
+    400554: windows
     2300000: _Tristan_Sjoerds_Character:Whole_body1
     2300002: Backplate
     2300004: Bell
@@ -725,6 +771,26 @@ ModelImporter:
     2300414: WallLamp5
     2300416: Whole_body1
     2300418: Whole_body2
+    2300420: floor
+    2300422: group102_polySurface70
+    2300424: MonkeyBody
+    2300426: MonkeyBody1
+    2300428: MonkeyBody2
+    2300430: polySurface70
+    2300432: polySurface71
+    2300434: polySurface72
+    2300436: polySurface73
+    2300438: polySurface74
+    2300440: polySurface75
+    2300442: polySurface76
+    2300444: Roof
+    2300446: SimonSaysPuzzle_ArrowDial_Bow
+    2300448: SimonSaysPuzzle_CenterDial_Bell
+    2300450: SimonSaysPuzzle_KeyDial_Shield
+    2300452: SimonSaysPuzzle_LeafDial_Shield
+    2300454: SimonSaysPuzzle_SunDial_Shield
+    2300456: SimonSaysPuzzle_VaseDial_Vase
+    2300458: walls
     3300000: _Tristan_Sjoerds_Character:Whole_body1
     3300002: Backplate
     3300004: Bell
@@ -935,6 +1001,26 @@ ModelImporter:
     3300414: WallLamp5
     3300416: Whole_body1
     3300418: Whole_body2
+    3300420: floor
+    3300422: group102_polySurface70
+    3300424: MonkeyBody
+    3300426: MonkeyBody1
+    3300428: MonkeyBody2
+    3300430: polySurface70
+    3300432: polySurface71
+    3300434: polySurface72
+    3300436: polySurface73
+    3300438: polySurface74
+    3300440: polySurface75
+    3300442: polySurface76
+    3300444: Roof
+    3300446: SimonSaysPuzzle_ArrowDial_Bow
+    3300448: SimonSaysPuzzle_CenterDial_Bell
+    3300450: SimonSaysPuzzle_KeyDial_Shield
+    3300452: SimonSaysPuzzle_LeafDial_Shield
+    3300454: SimonSaysPuzzle_SunDial_Shield
+    3300456: SimonSaysPuzzle_VaseDial_Vase
+    3300458: walls
     4300000: polySurface15
     4300002: polySurface16
     4300004: polySurface22
@@ -1145,6 +1231,26 @@ ModelImporter:
     4300414: Deco03
     4300416: Deco04
     4300418: Backplate
+    4300420: walls
+    4300422: floor
+    4300424: Roof
+    4300426: polySurface71
+    4300428: polySurface73
+    4300430: polySurface72
+    4300432: polySurface74
+    4300434: polySurface70
+    4300436: SimonSaysPuzzle_CenterDial_Bell
+    4300438: SimonSaysPuzzle_LeafDial_Shield
+    4300440: SimonSaysPuzzle_KeyDial_Shield
+    4300442: SimonSaysPuzzle_VaseDial_Vase
+    4300444: SimonSaysPuzzle_SunDial_Shield
+    4300446: SimonSaysPuzzle_ArrowDial_Bow
+    4300448: group102_polySurface70
+    4300450: MonkeyBody
+    4300452: MonkeyBody1
+    4300454: MonkeyBody2
+    4300456: polySurface75
+    4300458: polySurface76
   materials:
     importMaterials: 1
     materialName: 0
