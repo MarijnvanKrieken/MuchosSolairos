@@ -28,10 +28,15 @@ public class DiskManager: MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-		innerDisk.transform.Rotate(0f, Random.Range(1, 7) * 45f, 0f);
-		midDisk.transform.Rotate(0f, Random.Range(1, 7) * 45f, 0f);
-		outerDisk.transform.Rotate(0f, Random.Range(1, 7) * 45f, 0f);
 		customDebug = FindObjectOfType<CustomDebug>();
+		customDebug.AddDebug("start disks rotations: " + innerDisk.transform.localRotation.eulerAngles.y.ToString() + "," + midDisk.transform.localRotation.eulerAngles.y.ToString() + "," + outerDisk.transform.localRotation.eulerAngles.y.ToString());
+		while(innerDisk.transform.localRotation.eulerAngles.y == 0f)
+			innerDisk.transform.localRotation = Quaternion.Euler(0f, Random.Range(0, 7) * 45f, 0f);
+		while(midDisk.transform.localRotation.eulerAngles.y == 0f)
+			midDisk.transform.localRotation = Quaternion.Euler(0f, Random.Range(0, 7) * 45f, 0f);
+		while(outerDisk.transform.localRotation.eulerAngles.y == 0f)
+			outerDisk.transform.localRotation = Quaternion.Euler(0f, Random.Range(0, 7) * 45f, 0f);
+		customDebug.AddDebug("initialized disks rotations: " + innerDisk.transform.localRotation.eulerAngles.y.ToString() + "," + midDisk.transform.localRotation.eulerAngles.y.ToString() + "," + outerDisk.transform.localRotation.eulerAngles.y.ToString());
 		//customDebug.AddDebug("Start");
 	}
 
@@ -39,7 +44,10 @@ public class DiskManager: MonoBehaviour
 	{
 		yield return new WaitForSeconds(rotateTime);
 		canRotate = true;
-		//customDebug.AddDebug("canRotate set to true");
+		innerDisk.transform.localRotation = Quaternion.Euler(innerDisk.transform.localRotation.eulerAngles.x, Mathf.Round(innerDisk.transform.localRotation.eulerAngles.y), innerDisk.transform.localRotation.eulerAngles.z);
+		midDisk.transform.localRotation = Quaternion.Euler(midDisk.transform.localRotation.eulerAngles.x, Mathf.Round(midDisk.transform.localRotation.eulerAngles.y), midDisk.transform.localRotation.eulerAngles.z);
+		outerDisk.transform.localRotation = Quaternion.Euler(outerDisk.transform.localRotation.eulerAngles.x, Mathf.Round(outerDisk.transform.localRotation.eulerAngles.y), outerDisk.transform.localRotation.eulerAngles.z);
+		customDebug.AddDebug("new disks rotations: " + innerDisk.transform.localRotation.eulerAngles.y.ToString() + "," + midDisk.transform.localRotation.eulerAngles.y.ToString() + "," + outerDisk.transform.localRotation.eulerAngles.y.ToString());
 		yield return null;
 	}
 
@@ -80,7 +88,7 @@ public class DiskManager: MonoBehaviour
 			}
 		}
 
-		if(innerDisk.transform.rotation.eulerAngles.y == 0f && midDisk.transform.rotation.eulerAngles.y == 0f && outerDisk.transform.rotation.eulerAngles.y == 0f && completed == false)
+		if(innerDisk.transform.localRotation.eulerAngles.y == 0f && midDisk.transform.localRotation.eulerAngles.y == 0f && outerDisk.transform.localRotation.eulerAngles.y == 0f && completed == false)
 		{
 			customDebug.AddDebug("Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! ");
 			completed = true;
