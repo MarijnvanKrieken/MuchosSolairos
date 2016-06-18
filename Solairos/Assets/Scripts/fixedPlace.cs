@@ -15,11 +15,7 @@ public class fixedPlace : MonoBehaviour {
     [SerializeField]
     Vector3 placeForDeniedObjects;
 
-	// Use this for initialization
-	void Start () {
 	
-	}
-
     public void ReturnGoToPlace(int objectType, out Vector3 placeToGoTo, out bool stuck)
     {
         for (int i = 0; i < allowedObjectTypes.Length; i++)
@@ -35,9 +31,14 @@ public class fixedPlace : MonoBehaviour {
         stuck = false;
         placeToGoTo = placeForDeniedObjects;
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+    public void CheckWinningObject(out bool inPlace)
+    {
+        //inPlace = true;
+        
+        if ( Vector3.Distance( winningObject.transform.position, placeForAllowedObjects) < 0.11f)
+            inPlace = true;
+        else
+            inPlace = false;
+    }
 }
