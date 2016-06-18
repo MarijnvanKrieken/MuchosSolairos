@@ -26,6 +26,11 @@ public class HoldableObject : MonoBehaviour {
 
     public void SendBack(Vector3 endPos)
     {
+        Vector3 firstNode;
+        Vector3 secondNode;
+        
+        //GetComponent<Renderer>().bounds.min
+
         toHold.Kill();
         toNew = transform.DOMove(endPos, 2.0f);
         toNew.OnKill(() => GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None);

@@ -19,6 +19,7 @@ public class Telekinesis : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        //cursor
         RaycastHit hitInfo1;
 
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), out hitInfo1, 200.0f))
@@ -32,6 +33,9 @@ public class Telekinesis : MonoBehaviour {
         else
             cursor.color = Color.white;
 
+
+
+        //on tap
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hitInfo;
