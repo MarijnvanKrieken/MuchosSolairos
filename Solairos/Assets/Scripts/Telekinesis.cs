@@ -7,6 +7,9 @@ public class Telekinesis: MonoBehaviour
 	[SerializeField]
 	Image cursor;
 
+    [SerializeField]
+    ParticleSystem clouds;
+
 	GameObject holdingObject = null;
 	private CustomDebug customDebug;
 
@@ -15,6 +18,7 @@ public class Telekinesis: MonoBehaviour
 	void Start()
 	{
 		customDebug = FindObjectOfType<CustomDebug>();
+        
 	}
 
 	void CursorColor()
@@ -85,6 +89,10 @@ public class Telekinesis: MonoBehaviour
 					holdingObject = hitInfo.collider.GetComponent<HoldableObject>().gameObject;
 					holdingObject.transform.parent = Camera.main.transform.GetChild(0).transform;
 					holdingObject.GetComponent<HoldableObject>().SendToHold();
+
+                    clouds.transform.SetParent(holdingObject.transform);
+                    clouds.transform.localPosition = Vector3.zero;
+                    clouds.Play();
 				}
 				else if(holdingObject != null)
 				{
@@ -107,6 +115,7 @@ public class Telekinesis: MonoBehaviour
 					}
 					holdingObject.GetComponent<HoldableObject>().SendBack(sendToPlace, stayAfter);
 					holdingObject = null;
+                    clouds.Stop();
 				}
 				if(hitInfo.collider.tag == "Button")
 					if(hitInfo.collider.GetComponent<BeginButton>())
