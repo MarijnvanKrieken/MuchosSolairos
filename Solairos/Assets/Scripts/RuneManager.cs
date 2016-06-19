@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
 public class RuneManager: MonoBehaviour
 {
@@ -13,10 +12,13 @@ public class RuneManager: MonoBehaviour
 	public GameObject stoneDrag;
 	public GameObject stoneHit;
 
-    [SerializeField]
-    AudioSource MonkeySound;
+	public Rigidbody ear1;
+	public Rigidbody ear2;
 
-    [SerializeField]
+	[SerializeField]
+	AudioSource MonkeySound;
+
+	//[SerializeField]
 
 	//private RaycastHit hit;
 	private CustomDebug debug;
@@ -33,7 +35,7 @@ public class RuneManager: MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);
+		transform.Rotate(rotationSpeed * Time.deltaTime, 0f, 0f);
 		if(Input.GetMouseButtonDown(0))
 		{
 			RaycastHit hit;
@@ -49,10 +51,12 @@ public class RuneManager: MonoBehaviour
 				{
 					AudioSource bellSound = hit.transform.GetComponent<AudioSource>();
 					bellSound.Play();
-                    DOVirtual.DelayedCall(1.0f, () => 
-                    {
-                        MonkeySound.Play();
-                    });
+					DOVirtual.DelayedCall(1.0f, () =>
+					{
+						MonkeySound.Play();
+						ear1.constraints = RigidbodyConstraints.None;
+						ear2.constraints = RigidbodyConstraints.None;
+					});
 					//debug.AddDebug("Bell sound played");
 				}
 			}
