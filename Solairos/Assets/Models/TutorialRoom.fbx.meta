@@ -9,19 +9,85 @@ ModelImporter:
     100002: Key
     100004: //RootNode
     100006: TutorialRoom 1
+    100008: floor
+    100010: KeyHieroglyph
+    100012: KeyHieroglyph2
+    100014: polySurface115
+    100016: polySurface116
+    100018: polySurface117
+    100020: polySurface118
+    100022: polySurface71
+    100024: roofHole
+    100026: StandingDisc
+    100028: walls
+    100030: windows
+    100032: elevator
+    100034: floorTutorial
+    100036: tutorialFloor
     400000: Button
     400002: Key
     400004: //RootNode
     400006: TutorialRoom 1
+    400008: floor
+    400010: KeyHieroglyph
+    400012: KeyHieroglyph2
+    400014: polySurface115
+    400016: polySurface116
+    400018: polySurface117
+    400020: polySurface118
+    400022: polySurface71
+    400024: roofHole
+    400026: StandingDisc
+    400028: walls
+    400030: windows
+    400032: elevator
+    400034: floorTutorial
+    400036: tutorialFloor
     2300000: Button
     2300002: Key
     2300004: TutorialRoom 1
+    2300006: floor
+    2300008: KeyHieroglyph
+    2300010: KeyHieroglyph2
+    2300012: polySurface115
+    2300014: polySurface116
+    2300016: polySurface117
+    2300018: polySurface118
+    2300020: polySurface71
+    2300022: roofHole
+    2300024: walls
+    2300026: elevator
+    2300028: tutorialFloor
     3300000: Button
     3300002: Key
     3300004: TutorialRoom 1
+    3300006: floor
+    3300008: KeyHieroglyph
+    3300010: KeyHieroglyph2
+    3300012: polySurface115
+    3300014: polySurface116
+    3300016: polySurface117
+    3300018: polySurface118
+    3300020: polySurface71
+    3300022: roofHole
+    3300024: walls
+    3300026: elevator
+    3300028: tutorialFloor
     4300000: TutorialRoom
     4300002: Key
     4300004: Button
+    4300006: KeyHieroglyph
+    4300008: KeyHieroglyph2
+    4300010: roofHole
+    4300012: polySurface71
+    4300014: polySurface116
+    4300016: polySurface115
+    4300018: polySurface117
+    4300020: polySurface118
+    4300022: walls
+    4300024: floor
+    4300026: elevator
+    4300028: tutorialFloor
   materials:
     importMaterials: 1
     materialName: 0

@@ -114,7 +114,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.606, y: 9.439, z: 0}
+  m_LocalPosition: {x: -5.606, y: 9.548, z: 0}
   m_LocalScale: {x: 0.75806504, y: 0.7580651, z: 0.7580651}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -200,7 +200,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: d961aea76676b7f4fbf8ce202565556c, type: 2}
+  - {fileID: 2100000, guid: 68b89e041658da04fb9cee104b7ffcfe, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -226,7 +226,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: d961aea76676b7f4fbf8ce202565556c, type: 2}
+  - {fileID: 2100000, guid: 68b89e041658da04fb9cee104b7ffcfe, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -281,7 +281,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132532}
-  m_Mesh: {fileID: 4300004, guid: 40510c1ee7c10d44f9542561339189fb, type: 3}
+  m_Mesh: {fileID: 4300002, guid: d436c063e4dae984fb1d7e553830c3ca, type: 3}
 --- !u!33 &3366592
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -295,7 +295,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 172914}
-  m_Mesh: {fileID: 4300002, guid: 40510c1ee7c10d44f9542561339189fb, type: 3}
+  m_Mesh: {fileID: 4300000, guid: d436c063e4dae984fb1d7e553830c3ca, type: 3}
 --- !u!54 &5440540
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -409,7 +409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allowedObjectTypes: 18000000
   winningObject: {fileID: 147492}
-  placeForAllowedObjects: {x: -5.25, y: 9.3, z: 0}
+  placeForAllowedObjects: {x: -5.173136, y: 9.441107, z: 0.000001755364}
   placeForDeniedObjects: {x: -4.5, y: 9.3, z: 0}
 --- !u!114 &11498848
 MonoBehaviour:
