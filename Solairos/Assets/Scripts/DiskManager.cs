@@ -25,6 +25,9 @@ public class DiskManager: MonoBehaviour
 	private bool completed = false;
 	private bool canRotate = true;
 	private float rotateTime = 1f;
+	/*private float gear1TotalRotation = 0;
+	private float gear2TotalRotation = 0;
+	private float gear3TotalRotation = 0;*/
 
 	// Use this for initialization
 	void Start()
@@ -33,11 +36,17 @@ public class DiskManager: MonoBehaviour
 		customDebug = FindObjectOfType<CustomDebug>();
 		//customDebug.AddDebug("start disks rotations: " + innerDisk.transform.localRotation.eulerAngles.y.ToString() + "," + midDisk.transform.localRotation.eulerAngles.y.ToString() + "," + outerDisk.transform.localRotation.eulerAngles.y.ToString());
 		while(innerDisk.transform.localRotation.eulerAngles.x == 0f)
+		{
 			innerDisk.transform.localRotation = Quaternion.Euler(Random.Range(0, 7) * 45f, 0f, 0f);
+		}
 		while(midDisk.transform.localRotation.eulerAngles.x == 0f)
+		{
 			midDisk.transform.localRotation = Quaternion.Euler(Random.Range(0, 7) * 45f, 0f, 0f);
+		}
 		while(outerDisk.transform.localRotation.eulerAngles.x == 0f)
+		{
 			outerDisk.transform.localRotation = Quaternion.Euler(Random.Range(0, 7) * 45f, 0f, 0f);
+		}
 		//customDebug.AddDebug("initialized disks rotations: " + innerDisk.transform.localRotation.eulerAngles.y.ToString() + "," + midDisk.transform.localRotation.eulerAngles.y.ToString() + "," + outerDisk.transform.localRotation.eulerAngles.y.ToString());
 		//customDebug.AddDebug("Start");
 	}
@@ -49,7 +58,11 @@ public class DiskManager: MonoBehaviour
 		innerDisk.transform.localRotation = Quaternion.Euler(Mathf.Round(innerDisk.transform.localRotation.eulerAngles.x), innerDisk.transform.localRotation.eulerAngles.y, innerDisk.transform.localRotation.eulerAngles.z);
 		midDisk.transform.localRotation = Quaternion.Euler(Mathf.Round(midDisk.transform.localRotation.eulerAngles.x), midDisk.transform.localRotation.eulerAngles.y, midDisk.transform.localRotation.eulerAngles.z);
 		outerDisk.transform.localRotation = Quaternion.Euler(Mathf.Round(outerDisk.transform.localRotation.eulerAngles.x), outerDisk.transform.localRotation.eulerAngles.y, outerDisk.transform.localRotation.eulerAngles.z);
-		//customDebug.AddDebug("new disks rotations: " + innerDisk.transform.localRotation.eulerAngles.y.ToString() + "," + midDisk.transform.localRotation.eulerAngles.y.ToString() + "," + outerDisk.transform.localRotation.eulerAngles.y.ToString());
+		//customDebug.AddDebug("new disks rotations local: " + innerDisk.transform.localRotation.eulerAngles.x.ToString() + "," + midDisk.transform.localRotation.eulerAngles.x.ToString() + "," + outerDisk.transform.localRotation.eulerAngles.x.ToString());
+		//customDebug.AddDebug("new disks rotations global: " + innerDisk.transform.rotation.eulerAngles.x.ToString() + "," + midDisk.transform.rotation.eulerAngles.x.ToString() + "," + outerDisk.transform.rotation.eulerAngles.x.ToString());
+		/*customDebug.AddDebug("center disk rotation: " + innerDisk.transform.localRotation.eulerAngles.ToString());
+		customDebug.AddDebug("mid disk rotation: " + midDisk.transform.localRotation.eulerAngles.ToString());
+		customDebug.AddDebug("outer disk rotation: " + outerDisk.transform.localRotation.eulerAngles.ToString());*/
 		yield return null;
 	}
 
