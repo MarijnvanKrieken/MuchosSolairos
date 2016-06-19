@@ -27,7 +27,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 473768}
-  - 114: {fileID: 11442924}
+  - 114: {fileID: 11404936}
   m_Layer: 0
   m_Name: TutorialRoom
   m_TagString: Untagged
@@ -44,7 +44,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 489852}
   - 54: {fileID: 5440540}
-  - 65: {fileID: 6585560}
   - 135: {fileID: 13565896}
   - 136: {fileID: 13656128}
   - 114: {fileID: 11437664}
@@ -348,18 +347,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.31249785, y: 0.31249815, z: 0.31249815}
   m_Center: {x: 0.00000011920929, y: -0.000000074505806, z: 0}
---- !u!65 &6585560
-BoxCollider:
+--- !u!114 &11404936
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147492}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.61, y: 0.76, z: 0.74}
-  m_Center: {x: -0.15124932, y: 0.0000001937151, z: 0}
+  m_GameObject: {fileID: 146008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53e58f1a8dd0b3748ba5f79dba39d01b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11437664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -398,24 +396,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &11442924
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d80154bd759180b47a684154d7d35592, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectType: 24
-  grabCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &11449022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -429,8 +409,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allowedObjectTypes: 18000000
   winningObject: {fileID: 147492}
-  placeForAllowedObjects: {x: 0, y: 0, z: 0}
-  placeForDeniedObjects: {x: 0, y: 0, z: 0}
+  placeForAllowedObjects: {x: -5.25, y: 9.3, z: 0}
+  placeForDeniedObjects: {x: -4.5, y: 9.3, z: 0}
 --- !u!114 &11498848
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -442,6 +422,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c94f0ae05ad13e47858a670a546b55f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  elevator: {fileID: 0}
+  KeyHole: {fileID: 11449022}
 --- !u!135 &13565896
 SphereCollider:
   m_ObjectHideFlags: 1

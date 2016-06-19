@@ -23,7 +23,7 @@ public class BeginButton: MonoBehaviour
 		//customDebug.AddDebug("ActivateButton, win: " + win.ToString());
 		if(win)
 		{
-			elevator.DOMoveY(0f, 6.0f);
+			elevator.DOMoveY(0f, 20.0f);
 			//customDebug.AddDebug("Should move");
 		}
 

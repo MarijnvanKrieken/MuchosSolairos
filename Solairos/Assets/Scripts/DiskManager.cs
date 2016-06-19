@@ -16,6 +16,7 @@ public class DiskManager: MonoBehaviour
 	public Vector3 gear3Move;
 	public Image cursor;
 	public AudioSource stonesound;
+    public GameObject Banana;
 
 	private Tween gear1Tween;
 	private Tween gear2Tween;
@@ -28,6 +29,7 @@ public class DiskManager: MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
+        Banana.SetActive(false);
 		customDebug = FindObjectOfType<CustomDebug>();
 		//customDebug.AddDebug("start disks rotations: " + innerDisk.transform.localRotation.eulerAngles.y.ToString() + "," + midDisk.transform.localRotation.eulerAngles.y.ToString() + "," + outerDisk.transform.localRotation.eulerAngles.y.ToString());
 		while(innerDisk.transform.localRotation.eulerAngles.y == 0f)
@@ -47,7 +49,7 @@ public class DiskManager: MonoBehaviour
 		innerDisk.transform.localRotation = Quaternion.Euler(innerDisk.transform.localRotation.eulerAngles.x, Mathf.Round(innerDisk.transform.localRotation.eulerAngles.y), innerDisk.transform.localRotation.eulerAngles.z);
 		midDisk.transform.localRotation = Quaternion.Euler(midDisk.transform.localRotation.eulerAngles.x, Mathf.Round(midDisk.transform.localRotation.eulerAngles.y), midDisk.transform.localRotation.eulerAngles.z);
 		outerDisk.transform.localRotation = Quaternion.Euler(outerDisk.transform.localRotation.eulerAngles.x, Mathf.Round(outerDisk.transform.localRotation.eulerAngles.y), outerDisk.transform.localRotation.eulerAngles.z);
-		customDebug.AddDebug("new disks rotations: " + innerDisk.transform.localRotation.eulerAngles.y.ToString() + "," + midDisk.transform.localRotation.eulerAngles.y.ToString() + "," + outerDisk.transform.localRotation.eulerAngles.y.ToString());
+		//customDebug.AddDebug("new disks rotations: " + innerDisk.transform.localRotation.eulerAngles.y.ToString() + "," + midDisk.transform.localRotation.eulerAngles.y.ToString() + "," + outerDisk.transform.localRotation.eulerAngles.y.ToString());
 		yield return null;
 	}
 
@@ -103,7 +105,8 @@ public class DiskManager: MonoBehaviour
 
 		if(innerDisk.transform.localRotation.eulerAngles.y == 0f && midDisk.transform.localRotation.eulerAngles.y == 0f && outerDisk.transform.localRotation.eulerAngles.y == 0f && completed == false)
 		{
-			customDebug.AddDebug("Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! ");
+            Banana.SetActive(true);
+            //customDebug.AddDebug("Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! Gears complete! ");
 			completed = true;
 		}
 	}

@@ -15,6 +15,8 @@ public class PlacingPuzzleManager: MonoBehaviour
 	public GameObject lightBeam1;
 	public GameObject lightBeam2;
 
+    private bool finished = false;
+
 	void OnEnable()
 	{
 		HoldableObjectManager.Arrived += HoldableObjectManager_Arrived;
@@ -26,7 +28,7 @@ public class PlacingPuzzleManager: MonoBehaviour
 		lightBeam2.SetActive(false);
 	}
 
-	//PLEASE REMOVE, is changed
+	
 	public void WinConditionWeird(Transform t)
 	{
 		//t.position += Vector3.up * 0.5f;
@@ -34,27 +36,34 @@ public class PlacingPuzzleManager: MonoBehaviour
 		lightBeam2.SetActive(true);
 	}
 
-	private void HoldableObjectManager_Arrived()
-	{
-		//OnPuzzleFinished.Invoke();
+    private void HoldableObjectManager_Arrived()
+    {
+        //OnPuzzleFinished.Invoke();
+        if (finished)
+            return;
 
-		bool isInPlace = false;
+        bool isInPlace = false;
 
-		for(int i = 0; i < puzzlePlaces.Length; i++)
-		{
-			puzzlePlaces[i].CheckWinningObject(out isInPlace);
+        for (int i = 0; i < puzzlePlaces.Length; i++)
+        {
+            puzzlePlaces[i].CheckWinningObject(out isInPlace);
 
-			if(isInPlace == false)
-				return;
-
-
-		}
+            if (isInPlace == false)
+                return;
 
 
-		OnPuzzleFinished.Invoke();
+        }
 
-	}
 
+        OnPuzzleFinished.Invoke();
+
+        for (int i = 0; i < puzzlePlaces.Length; i++)
+        {
+            puzzlePlaces[i].enabled = false;
+        }
+
+        finished = true;
+    }
 
 	void OnDisable()
 	{
