@@ -20,9 +20,9 @@ public class PlacingPuzzleManager : MonoBehaviour {
 
 
     //PLEASE REMOVE
-    public void WinConditionWeird()
+    public void WinConditionWeird(Transform t)
     {
-        transform.position += Vector3.up * 5;
+        t.position += Vector3.up * 0.5f;
     }
 
     private void HoldableObjectManager_Arrived()

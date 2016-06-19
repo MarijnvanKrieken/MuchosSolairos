@@ -1,0 +1,122 @@
+fileFormatVersion: 2
+guid: 1c31e8e7c909b4f489b3aaf6745baf5c
+timeCreated: 1466293345
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: PicturePuzzle_all
+    100002: PicturePuzzle_group
+    100004: //RootNode
+    100006: Tablet01
+    100008: Tablet02
+    100010: Tablet03
+    100012: Tablet04
+    100014: Tablet05
+    100016: Tablet06
+    100018: Tablet07
+    100020: Tablet08
+    100022: Tablet09
+    400000: PicturePuzzle_all
+    400002: PicturePuzzle_group
+    400004: //RootNode
+    400006: Tablet01
+    400008: Tablet02
+    400010: Tablet03
+    400012: Tablet04
+    400014: Tablet05
+    400016: Tablet06
+    400018: Tablet07
+    400020: Tablet08
+    400022: Tablet09
+    2300000: Tablet01
+    2300002: Tablet02
+    2300004: Tablet03
+    2300006: Tablet04
+    2300008: Tablet05
+    2300010: Tablet06
+    2300012: Tablet07
+    2300014: Tablet08
+    2300016: Tablet09
+    3300000: Tablet01
+    3300002: Tablet02
+    3300004: Tablet03
+    3300006: Tablet04
+    3300008: Tablet05
+    3300010: Tablet06
+    3300012: Tablet07
+    3300014: Tablet08
+    3300016: Tablet09
+    4300000: Tablet01
+    4300002: Tablet02
+    4300004: Tablet03
+    4300006: Tablet04
+    4300008: Tablet05
+    4300010: Tablet06
+    4300012: Tablet07
+    4300014: Tablet08
+    4300016: Tablet09
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

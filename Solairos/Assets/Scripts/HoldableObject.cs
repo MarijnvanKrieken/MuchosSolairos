@@ -32,11 +32,11 @@ public class HoldableObject : MonoBehaviour {
 
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 
-        
 
 
         toHold = transform.DOLocalMove(Vector3.zero, 2.0f);
         toHold.SetEase(grabCurve);
+        //toHold.OnComplete(()=> GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll);
 
         rotate.Kill();
         rotate = transform.DOLocalRotate(Vector3.zero, 1.0f);
@@ -47,8 +47,13 @@ public class HoldableObject : MonoBehaviour {
     {
         Vector3[] pathNodes = new Vector3[2];
 
-        //pathNodes[1] = endPos * ((endPos.magnitude - Mathf.Abs(GetComponent<Renderer>().bounds.min.z) / 1.7f) / endPos.magnitude);
-        pathNodes[1] = endPos * ((endPos.magnitude - 0.09f) / endPos.magnitude); 
+        if (!stay)
+            pathNodes[1] = endPos * ((endPos.magnitude - 0.3f) / endPos.magnitude);
+        else
+            pathNodes[1] = endPos;
+
+        //pathNodes[1] = endPos * ((endPos.magnitude - 0.09f) / endPos.magnitude); 
+
         pathNodes[0] = pathNodes[1] * 0.8f;
 
         toHold.Kill();

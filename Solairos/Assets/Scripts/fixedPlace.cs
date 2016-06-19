@@ -18,17 +18,21 @@ public class fixedPlace : MonoBehaviour {
 	
     public void ReturnGoToPlace(int objectType, out Vector3 placeToGoTo, out bool stuck)
     {
+
+       // Debug.Log("length of objectTypes is " + allowedObjectTypes.Length);
         for (int i = 0; i < allowedObjectTypes.Length; i++)
         {
+          //  Debug.Log(objectType + " > " + allowedObjectTypes[i]);
             if (objectType == allowedObjectTypes[i])
             {
+              //  Debug.Log("found same objectTypeS");
                 placeToGoTo = placeForAllowedObjects;
                 stuck = true;
                 return;
             }
         }
 
-        stuck = false;
+        stuck = true;
         placeToGoTo = placeForDeniedObjects;
     }
 
