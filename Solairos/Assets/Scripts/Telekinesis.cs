@@ -10,6 +10,9 @@ public class Telekinesis: MonoBehaviour
     [SerializeField]
     ParticleSystem clouds;
 
+    [SerializeField]
+    GameObject poofParticle;
+
 	GameObject holdingObject = null;
 	private CustomDebug customDebug;
 
@@ -118,9 +121,15 @@ public class Telekinesis: MonoBehaviour
 					holdingObject = null;
                     clouds.Stop();
 				}
+
 				if(hitInfo.collider.tag == "Button")
 					if(hitInfo.collider.GetComponent<BeginButton>())
 						hitInfo.collider.GetComponent<BeginButton>().ActivateButton();
+
+                if (holdingObject == null)
+                {
+                    Instantiate(poofParticle, hitInfo.point, Quaternion.identity);
+                }
 			}
 
 
