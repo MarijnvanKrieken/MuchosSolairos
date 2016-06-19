@@ -669,6 +669,30 @@ Prefab:
       propertyPath: OnPuzzleFinished.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Transform, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 11494318, guid: 30ab33162b18d7b4e8366bab405ca2ab, type: 2}
+      propertyPath: placeForAllowedObjects.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494318, guid: 30ab33162b18d7b4e8366bab405ca2ab, type: 2}
+      propertyPath: placeForDeniedObjects.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460992, guid: 30ab33162b18d7b4e8366bab405ca2ab, type: 2}
+      propertyPath: placeForAllowedObjects.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460992, guid: 30ab33162b18d7b4e8366bab405ca2ab, type: 2}
+      propertyPath: placeForDeniedObjects.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493336, guid: 30ab33162b18d7b4e8366bab405ca2ab, type: 2}
+      propertyPath: placeForAllowedObjects.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493336, guid: 30ab33162b18d7b4e8366bab405ca2ab, type: 2}
+      propertyPath: placeForDeniedObjects.x
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 30ab33162b18d7b4e8366bab405ca2ab, type: 2}
   m_IsPrefabParent: 0
@@ -2625,6 +2649,7 @@ MonoBehaviour:
   gear3Move: {x: 2, y: -1, z: 1}
   cursor: {fileID: 1741657087}
   stonesound: {fileID: 1258720203}
+  Banana: {fileID: 1896386557}
 --- !u!1 &1258720183 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100548, guid: 485338f43b4f2c94d9686f8326810e96, type: 3}
@@ -3054,6 +3079,8 @@ MonoBehaviour:
   clickedNotes: []
   stoneDrag: {fileID: 1612324823}
   stoneHit: {fileID: 321325493}
+  MonkeySound: {fileID: 2048099362}
+  debug: {fileID: 0}
 --- !u!64 &1258720196
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3383,15 +3410,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: e083711c51a9fdd4eb14176a665a67dd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.33
+      value: 9.324
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e083711c51a9fdd4eb14176a665a67dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.69678867
+      value: 4.977
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e083711c51a9fdd4eb14176a665a67dd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.83
+      value: -1.758
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e083711c51a9fdd4eb14176a665a67dd, type: 3}
       propertyPath: m_LocalRotation.x
