@@ -8,6 +8,7 @@ TagManager:
   - Gear
   - Button
   - Bell
+  - Vision
   layers:
   - Default
   - TransparentFX
