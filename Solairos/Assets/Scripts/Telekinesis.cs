@@ -6,7 +6,7 @@ public class Telekinesis: MonoBehaviour
 
 	[SerializeField]
 	Image cursor;
-
+    
     [SerializeField]
     ParticleSystem clouds;
 
@@ -33,29 +33,29 @@ public class Telekinesis: MonoBehaviour
 			{
 				if(hitInfo1.transform.tag == "Gear")
 				{
-					cursor.color = Color.black;
-					return;
+                    cursor.color = Color.cyan;
+                    return;
 				}
 
 				if(hitInfo1.transform.tag == "Rune")
 				{
-					cursor.color = Color.black;
-					return;
+                    cursor.color = Color.cyan;
+                    return;
 				}
 				if(hitInfo1.transform.tag == "Button")
 				{
-					cursor.color = Color.black;
-					return;
+                    cursor.color = Color.cyan;
+                    return;
 				}
 				if(hitInfo1.transform.tag == "Bell")
 				{
-					cursor.color = Color.black;
-					return;
+                    cursor.color = Color.cyan;
+                    return;
 				}
 
 				if(hitInfo1.collider.GetComponent<HoldableObject>() != null)
 				{
-					cursor.color = Color.black;
+                    cursor.color = Color.cyan;
 
 					return;
 				}
@@ -64,12 +64,13 @@ public class Telekinesis: MonoBehaviour
 			{
 				if(hitInfo1.collider.gameObject != holdingObject)
 				{
-					cursor.color = Color.blue;
-					return;
+                    cursor.color = Color.blue;
+                    return;
 				}
 			}
 		}
-		//else
+        //else
+        
 		cursor.color = Color.white;
 	}
 
