@@ -283,6 +283,60 @@ ModelImporter:
     100550: SimonSaysPuzzle_VaseDial_Vase
     100552: walls
     100554: windows
+    100556: Altar
+    100558: AltarStairs
+    100560: BellFrame
+    100562: Curbs1
+    100564: Elevator
+    100566: Floor01
+    100568: Floor02
+    100570: FloorTiles
+    100572: Frame01
+    100574: Frame02
+    100576: Frame03
+    100578: Frame04
+    100580: Frames
+    100582: LeftEar01
+    100584: LeftHand
+    100586: MayanBell8
+    100588: MonkeyBody3
+    100590: MonkeyEars01
+    100592: pCube74
+    100594: pCube76
+    100596: pCube77
+    100598: PicturePuzzle_group
+    100600: Pillars
+    100602: Pillars 1
+    100604: pillarsSmall01
+    100606: RightEar01
+    100608: RightHand
+    100610: Room
+    100612: Rubble
+    100614: Rubble01
+    100616: Rubble02
+    100618: SmallPillars
+    100620: Tablet01
+    100622: Tablet02
+    100624: Tablet03
+    100626: Tablet04
+    100628: Tablet05
+    100630: Tablet06
+    100632: Tablet07
+    100634: Tablet08
+    100636: Tablet09
+    100638: WallLamp10
+    100640: WallLamp6
+    100642: WallLamp7
+    100644: WallLamp8
+    100646: WallLamp9
+    100648: Walls
+    100650: Water
+    100652: WaterBasin
+    100654: WaterBasin 1
+    100656: Window01
+    100658: Window02
+    100660: Window03
+    100662: Window04
     400000: _Tristan_Sjoerds_Character:Whole_body1
     400002: ArrowDial
     400004: Backplate
@@ -561,6 +615,60 @@ ModelImporter:
     400550: SimonSaysPuzzle_VaseDial_Vase
     400552: walls
     400554: windows
+    400556: Altar
+    400558: AltarStairs
+    400560: BellFrame
+    400562: Curbs1
+    400564: Elevator
+    400566: Floor01
+    400568: Floor02
+    400570: FloorTiles
+    400572: Frame01
+    400574: Frame02
+    400576: Frame03
+    400578: Frame04
+    400580: Frames
+    400582: LeftEar01
+    400584: LeftHand
+    400586: MayanBell8
+    400588: MonkeyBody3
+    400590: MonkeyEars01
+    400592: pCube74
+    400594: pCube76
+    400596: pCube77
+    400598: PicturePuzzle_group
+    400600: Pillars
+    400602: Pillars 1
+    400604: pillarsSmall01
+    400606: RightEar01
+    400608: RightHand
+    400610: Room
+    400612: Rubble
+    400614: Rubble01
+    400616: Rubble02
+    400618: SmallPillars
+    400620: Tablet01
+    400622: Tablet02
+    400624: Tablet03
+    400626: Tablet04
+    400628: Tablet05
+    400630: Tablet06
+    400632: Tablet07
+    400634: Tablet08
+    400636: Tablet09
+    400638: WallLamp10
+    400640: WallLamp6
+    400642: WallLamp7
+    400644: WallLamp8
+    400646: WallLamp9
+    400648: Walls
+    400650: Water
+    400652: WaterBasin
+    400654: WaterBasin 1
+    400656: Window01
+    400658: Window02
+    400660: Window03
+    400662: Window04
     2300000: _Tristan_Sjoerds_Character:Whole_body1
     2300002: Backplate
     2300004: Bell
@@ -791,6 +899,49 @@ ModelImporter:
     2300454: SimonSaysPuzzle_SunDial_Shield
     2300456: SimonSaysPuzzle_VaseDial_Vase
     2300458: walls
+    2300460: AltarStairs
+    2300462: BellFrame
+    2300464: Curbs1
+    2300466: Elevator
+    2300468: Floor01
+    2300470: FloorTiles
+    2300472: Frame01
+    2300474: Frame02
+    2300476: Frame03
+    2300478: Frame04
+    2300480: LeftEar01
+    2300482: LeftHand
+    2300484: MayanBell8
+    2300486: MonkeyBody3
+    2300488: pCube74
+    2300490: pCube76
+    2300492: pCube77
+    2300494: Pillars 1
+    2300496: pillarsSmall01
+    2300498: RightEar01
+    2300500: RightHand
+    2300502: Rubble01
+    2300504: Rubble02
+    2300506: Tablet01
+    2300508: Tablet02
+    2300510: Tablet03
+    2300512: Tablet04
+    2300514: Tablet05
+    2300516: Tablet06
+    2300518: Tablet07
+    2300520: Tablet08
+    2300522: Tablet09
+    2300524: WallLamp10
+    2300526: WallLamp6
+    2300528: WallLamp7
+    2300530: WallLamp8
+    2300532: WallLamp9
+    2300534: Walls
+    2300536: WaterBasin 1
+    2300538: Window01
+    2300540: Window02
+    2300542: Window03
+    2300544: Window04
     3300000: _Tristan_Sjoerds_Character:Whole_body1
     3300002: Backplate
     3300004: Bell
@@ -1021,6 +1172,49 @@ ModelImporter:
     3300454: SimonSaysPuzzle_SunDial_Shield
     3300456: SimonSaysPuzzle_VaseDial_Vase
     3300458: walls
+    3300460: AltarStairs
+    3300462: BellFrame
+    3300464: Curbs1
+    3300466: Elevator
+    3300468: Floor01
+    3300470: FloorTiles
+    3300472: Frame01
+    3300474: Frame02
+    3300476: Frame03
+    3300478: Frame04
+    3300480: LeftEar01
+    3300482: LeftHand
+    3300484: MayanBell8
+    3300486: MonkeyBody3
+    3300488: pCube74
+    3300490: pCube76
+    3300492: pCube77
+    3300494: Pillars 1
+    3300496: pillarsSmall01
+    3300498: RightEar01
+    3300500: RightHand
+    3300502: Rubble01
+    3300504: Rubble02
+    3300506: Tablet01
+    3300508: Tablet02
+    3300510: Tablet03
+    3300512: Tablet04
+    3300514: Tablet05
+    3300516: Tablet06
+    3300518: Tablet07
+    3300520: Tablet08
+    3300522: Tablet09
+    3300524: WallLamp10
+    3300526: WallLamp6
+    3300528: WallLamp7
+    3300530: WallLamp8
+    3300532: WallLamp9
+    3300534: Walls
+    3300536: WaterBasin 1
+    3300538: Window01
+    3300540: Window02
+    3300542: Window03
+    3300544: Window04
     4300000: polySurface15
     4300002: polySurface16
     4300004: polySurface22
@@ -1251,6 +1445,49 @@ ModelImporter:
     4300454: MonkeyBody2
     4300456: polySurface75
     4300458: polySurface76
+    4300460: Pillars
+    4300462: Walls
+    4300464: Window01
+    4300466: Window02
+    4300468: Window03
+    4300470: Window04
+    4300472: Tablet01
+    4300474: Tablet02
+    4300476: Tablet03
+    4300478: Tablet04
+    4300480: Tablet05
+    4300482: Tablet06
+    4300484: Tablet07
+    4300486: Tablet08
+    4300488: Tablet09
+    4300490: Elevator
+    4300492: WallLamp6
+    4300494: WallLamp7
+    4300496: WallLamp8
+    4300498: WallLamp9
+    4300500: WallLamp10
+    4300502: MonkeyBody3
+    4300504: LeftHand
+    4300506: RightHand
+    4300508: RightEar01
+    4300510: LeftEar01
+    4300512: WaterBasin
+    4300514: pillarsSmall01
+    4300516: Floor01
+    4300518: FloorTiles
+    4300520: Curbs1
+    4300522: Rubble01
+    4300524: Rubble02
+    4300526: AltarStairs
+    4300528: pCube74
+    4300530: pCube76
+    4300532: pCube77
+    4300534: Frame01
+    4300536: Frame02
+    4300538: Frame03
+    4300540: Frame04
+    4300542: MayanBell8
+    4300544: BellFrame
   materials:
     importMaterials: 1
     materialName: 0
