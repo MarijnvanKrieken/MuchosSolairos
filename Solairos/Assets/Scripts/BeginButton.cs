@@ -14,7 +14,7 @@ public class BeginButton : MonoBehaviour {
 
     public void ActivateButton()
     {
-        Camera.main.transform.DOMoveY(1.7f, 6.0f);
+        //Camera.main.transform.DOMoveY(1.7f, 6.0f);
 
         bool win = false;
 
