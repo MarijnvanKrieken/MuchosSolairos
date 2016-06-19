@@ -29,14 +29,14 @@ public class DiskManager: MonoBehaviour
 	void Start()
 	{
 		customDebug = FindObjectOfType<CustomDebug>();
-		customDebug.AddDebug("start disks rotations: " + innerDisk.transform.localRotation.eulerAngles.y.ToString() + "," + midDisk.transform.localRotation.eulerAngles.y.ToString() + "," + outerDisk.transform.localRotation.eulerAngles.y.ToString());
+		//customDebug.AddDebug("start disks rotations: " + innerDisk.transform.localRotation.eulerAngles.y.ToString() + "," + midDisk.transform.localRotation.eulerAngles.y.ToString() + "," + outerDisk.transform.localRotation.eulerAngles.y.ToString());
 		while(innerDisk.transform.localRotation.eulerAngles.y == 0f)
 			innerDisk.transform.localRotation = Quaternion.Euler(0f, Random.Range(0, 7) * 45f, 0f);
 		while(midDisk.transform.localRotation.eulerAngles.y == 0f)
 			midDisk.transform.localRotation = Quaternion.Euler(0f, Random.Range(0, 7) * 45f, 0f);
 		while(outerDisk.transform.localRotation.eulerAngles.y == 0f)
 			outerDisk.transform.localRotation = Quaternion.Euler(0f, Random.Range(0, 7) * 45f, 0f);
-		customDebug.AddDebug("initialized disks rotations: " + innerDisk.transform.localRotation.eulerAngles.y.ToString() + "," + midDisk.transform.localRotation.eulerAngles.y.ToString() + "," + outerDisk.transform.localRotation.eulerAngles.y.ToString());
+		//customDebug.AddDebug("initialized disks rotations: " + innerDisk.transform.localRotation.eulerAngles.y.ToString() + "," + midDisk.transform.localRotation.eulerAngles.y.ToString() + "," + outerDisk.transform.localRotation.eulerAngles.y.ToString());
 		//customDebug.AddDebug("Start");
 	}
 
@@ -66,27 +66,27 @@ public class DiskManager: MonoBehaviour
 					//customDebug.AddDebug("rotate");
 					if(hit.transform.gameObject.name == gear1.name)
 					{
-                        gear1.transform.DORotate(new Vector3(321f, 0f, 0f), rotateTime*0.8f, RotateMode.LocalAxisAdd);
+						gear1.transform.DORotate(new Vector3(321f, 0f, 0f), rotateTime * 0.8f, RotateMode.LocalAxisAdd);
 
-                        gear1Tween = innerDisk.transform.DORotate(new Vector3(0f, gear1Move.x * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
+						gear1Tween = innerDisk.transform.DORotate(new Vector3(0f, gear1Move.x * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						gear2Tween = midDisk.transform.DORotate(new Vector3(0f, gear1Move.y * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						gear3Tween = outerDisk.transform.DORotate(new Vector3(0f, gear1Move.z * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						startCanRotate = true;
 					}
 					else if(hit.transform.gameObject.name == gear2.name)
 					{
-                        gear2.transform.DORotate(new Vector3(297f, 0f, 0f), rotateTime * 0.8f, RotateMode.LocalAxisAdd);
+						gear2.transform.DORotate(new Vector3(297f, 0f, 0f), rotateTime * 0.8f, RotateMode.LocalAxisAdd);
 
-                        gear1Tween = innerDisk.transform.DORotate(new Vector3(0f, gear2Move.x * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
+						gear1Tween = innerDisk.transform.DORotate(new Vector3(0f, gear2Move.x * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						gear2Tween = midDisk.transform.DORotate(new Vector3(0f, gear2Move.y * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						gear3Tween = outerDisk.transform.DORotate(new Vector3(0f, gear2Move.z * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						startCanRotate = true;
 					}
 					else if(hit.transform.gameObject.name == gear3.name)
 					{
-                        gear3.transform.DORotate(new Vector3(382f, 0f, 0f), rotateTime * 0.8f, RotateMode.LocalAxisAdd);
+						gear3.transform.DORotate(new Vector3(382f, 0f, 0f), rotateTime * 0.8f, RotateMode.LocalAxisAdd);
 
-                        gear1Tween = innerDisk.transform.DORotate(new Vector3(0f, gear3Move.x * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
+						gear1Tween = innerDisk.transform.DORotate(new Vector3(0f, gear3Move.x * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						gear2Tween = midDisk.transform.DORotate(new Vector3(0f, gear3Move.y * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						gear3Tween = outerDisk.transform.DORotate(new Vector3(0f, gear3Move.z * 45f, 0f), rotateTime, RotateMode.LocalAxisAdd);
 						startCanRotate = true;

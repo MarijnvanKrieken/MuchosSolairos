@@ -1,29 +1,33 @@
-﻿using UnityEngine;
-using System.Collections;
-using DG.Tweening;
+﻿using DG.Tweening;
+using UnityEngine;
 
-public class BeginButton : MonoBehaviour {
+public class BeginButton: MonoBehaviour
+{
+	public Transform elevator;
 
-    [SerializeField]
-    fixedPlace KeyHole;
+	[SerializeField]
+	fixedPlace KeyHole;
+	private CustomDebug customDebug;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start()
+	{
+		customDebug = FindObjectOfType<CustomDebug>();
 	}
 
-    public void ActivateButton()
-    {
-        //Camera.main.transform.DOMoveY(1.7f, 6.0f);
+	public void ActivateButton()
+	{
+		bool win = false;
 
-        bool win = false;
+		KeyHole.CheckWinningObject(out win);
+		//customDebug.AddDebug("ActivateButton, win: " + win.ToString());
+		if(win)
+		{
+			elevator.DOMoveY(0f, 6.0f);
+			//customDebug.AddDebug("Should move");
+		}
 
-        KeyHole.CheckWinningObject(out win);
+	}
 
-        if (win)
-            Camera.main.transform.DOMoveY(1.7f, 6.0f);
 
-    }
-	
-	
 }

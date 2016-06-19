@@ -8,13 +8,13 @@ public class Telekinesis: MonoBehaviour
 	Image cursor;
 
 	GameObject holdingObject = null;
-
+	private CustomDebug customDebug;
 
 
 	// Use this for initialization
 	void Start()
 	{
-
+		customDebug = FindObjectOfType<CustomDebug>();
 	}
 
 	void CursorColor()
@@ -38,19 +38,23 @@ public class Telekinesis: MonoBehaviour
 					cursor.color = Color.black;
 					return;
 				}
-                if (hitInfo1.transform.tag == "Button")
-                {
-                    cursor.color = Color.black;
-                    return;
-                }
+				if(hitInfo1.transform.tag == "Button")
+				{
+					cursor.color = Color.black;
+					return;
+				}
+				if(hitInfo1.transform.tag == "Bell")
+				{
+					cursor.color = Color.black;
+					return;
+				}
 
-                if (hitInfo1.collider.GetComponent<HoldableObject>() != null)
+				if(hitInfo1.collider.GetComponent<HoldableObject>() != null)
 				{
 					cursor.color = Color.black;
 
 					return;
 				}
-
 			}
 			else //when holding object
 			{
@@ -59,11 +63,8 @@ public class Telekinesis: MonoBehaviour
 					cursor.color = Color.blue;
 					return;
 				}
-
 			}
-
 		}
-
 		//else
 		cursor.color = Color.white;
 	}
@@ -71,59 +72,45 @@ public class Telekinesis: MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-
-
 		CursorColor();
-
-
 		//on tap
 		if(Input.GetMouseButtonDown(0))
 		{
 			RaycastHit hitInfo;
 
-
-            if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), out hitInfo, 200.0f))
+			if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), out hitInfo, 200.0f))
 			{
 				if(hitInfo.collider.GetComponent<HoldableObject>() && holdingObject == null)
 				{
 					holdingObject = hitInfo.collider.GetComponent<HoldableObject>().gameObject;
 					holdingObject.transform.parent = Camera.main.transform.GetChild(0).transform;
-
 					holdingObject.GetComponent<HoldableObject>().SendToHold();
-
 				}
-                else if(holdingObject != null)
+				else if(holdingObject != null)
 				{
-
-                    if (hitInfo.collider.gameObject == holdingObject)
+					if(hitInfo.collider.gameObject == holdingObject)
 						return;
 
-                    if (hitInfo.collider.tag == "Button")
-                        if (hitInfo.collider.GetComponent<BeginButton>())
-                            hitInfo.collider.GetComponent<BeginButton>().ActivateButton();
-
-                    holdingObject.transform.parent = null;
-
+					holdingObject.transform.parent = null;
 					Vector3 sendToPlace = Vector3.zero;
 					bool stayAfter = false;
 
-                    if (hitInfo.collider.GetComponent<fixedPlace>())
-                    {
-                        hitInfo.collider.GetComponent<fixedPlace>().ReturnGoToPlace(holdingObject.GetComponent<HoldableObject>().objectType, out sendToPlace, out stayAfter);
-                    }
-                    else
-                    {
-                        sendToPlace = hitInfo.point;
-
-                        Debug.Log(hitInfo.collider.name);
-                        Debug.Log("does it get here?");
-                    }
-
-
+					if(hitInfo.collider.GetComponent<fixedPlace>())
+					{
+						hitInfo.collider.GetComponent<fixedPlace>().ReturnGoToPlace(holdingObject.GetComponent<HoldableObject>().objectType, out sendToPlace, out stayAfter);
+					}
+					else
+					{
+						sendToPlace = hitInfo.point;
+						Debug.Log(hitInfo.collider.name);
+						Debug.Log("does it get here?");
+					}
 					holdingObject.GetComponent<HoldableObject>().SendBack(sendToPlace, stayAfter);
 					holdingObject = null;
 				}
-
+				if(hitInfo.collider.tag == "Button")
+					if(hitInfo.collider.GetComponent<BeginButton>())
+						hitInfo.collider.GetComponent<BeginButton>().ActivateButton();
 			}
 
 

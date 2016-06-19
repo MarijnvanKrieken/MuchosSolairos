@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -38,6 +39,12 @@ public class RuneManager: MonoBehaviour
 					Invoke(hit.transform.name, 0f); //function is named to the game object name
 					runeSound.Play();
 				}
+				if(hit.transform.tag == "Bell")
+				{
+					AudioSource bellSound = hit.transform.GetComponent<AudioSource>();
+					bellSound.Play();
+					//debug.AddDebug("Bell sound played");
+				}
 			}
 		}
 	}
@@ -45,7 +52,18 @@ public class RuneManager: MonoBehaviour
 	void CheckNotes()
 	{
 		//debug.AddDebug("Check notes, clicked count: " + clickedNotes.Count.ToString());
-		int i;
+		if(clickedNotes[clickedNotes.Count - 1] != melody[clickedNotes.Count - 1])
+		{
+			StartCoroutine("PlayStartNote");
+		}
+		else if(clickedNotes.Count == 5)
+		{
+			StartCoroutine("PlayLastFive");
+			rotationSpeed = 100f;
+			transform.parent.DOMoveY(-3.5f, 10f);
+		}
+
+		/*int i;
 		for(i = 0; i < clickedNotes.Count; i++)
 		{
 			if(clickedNotes[i] != melody[i]) //if notes clicked are wrong
@@ -53,9 +71,8 @@ public class RuneManager: MonoBehaviour
 				//debug.AddDebug("clicked melody is wrong, reseting...");
 				//clear clicked notes and play reset and start sound
 				StartCoroutine("PlayStartNote");
-				return;
 			}
-			if(clickedNotes.Count == 5 && clickedNotes[4] == melody[4]) //notes are clicked right and 5 notes met
+			else if(clickedNotes.Count == 5 && clickedNotes[4] == melody[4]) //notes are clicked right and 5 notes met
 			{
 				StartCoroutine("PlayLastFive");
 				rotationSpeed = 100f;
@@ -65,7 +82,7 @@ public class RuneManager: MonoBehaviour
 			{
 				StartCoroutine("PlayStartNote");
 			}
-		}
+		}*/
 	}
 
 	/*
