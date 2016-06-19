@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DG.Tweening;
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -15,7 +16,12 @@ public class PlacingPuzzleManager: MonoBehaviour
 	public GameObject lightBeam1;
 	public GameObject lightBeam2;
 
-    private bool finished = false;
+	public Transform LeftHand;
+	public Transform RightHand;
+
+	public Transform eyeLightSource;
+
+	private bool finished = false;
 
 	void OnEnable()
 	{
@@ -28,42 +34,53 @@ public class PlacingPuzzleManager: MonoBehaviour
 		lightBeam2.SetActive(false);
 	}
 
-	
-	public void WinConditionWeird(Transform t)
+	public void WinConditionWeird()
 	{
 		//t.position += Vector3.up * 0.5f;
-		lightBeam1.SetActive(true);
-		lightBeam2.SetActive(true);
+
+		eyeLightSource.DOMoveZ(-0.1f, 1f);
+		DOVirtual.DelayedCall(1f, () =>
+		{
+			lightBeam1.SetActive(true);
+			lightBeam2.SetActive(true);
+		});
+		DOVirtual.DelayedCall(2f, () =>
+		 {
+			 LeftHand.DORotate(Vector3.zero, 2f);
+			 LeftHand.DOMoveX(-0.5f, 2f);
+			 RightHand.DORotate(new Vector3(0, -180, 0), 2f);
+			 RightHand.DOMoveX(0.5f, 2f);
+		 });
 	}
 
-    private void HoldableObjectManager_Arrived()
-    {
-        //OnPuzzleFinished.Invoke();
-        if (finished)
-            return;
+	private void HoldableObjectManager_Arrived()
+	{
+		//OnPuzzleFinished.Invoke();
+		if(finished)
+			return;
 
-        bool isInPlace = false;
+		bool isInPlace = false;
 
-        for (int i = 0; i < puzzlePlaces.Length; i++)
-        {
-            puzzlePlaces[i].CheckWinningObject(out isInPlace);
+		for(int i = 0; i < puzzlePlaces.Length; i++)
+		{
+			puzzlePlaces[i].CheckWinningObject(out isInPlace);
 
-            if (isInPlace == false)
-                return;
-
-
-        }
+			if(isInPlace == false)
+				return;
 
 
-        OnPuzzleFinished.Invoke();
+		}
 
-        for (int i = 0; i < puzzlePlaces.Length; i++)
-        {
-            puzzlePlaces[i].enabled = false;
-        }
 
-        finished = true;
-    }
+		OnPuzzleFinished.Invoke();
+
+		for(int i = 0; i < puzzlePlaces.Length; i++)
+		{
+			puzzlePlaces[i].enabled = false;
+		}
+
+		finished = true;
+	}
 
 	void OnDisable()
 	{
