@@ -47,14 +47,17 @@ public class HoldableObject : MonoBehaviour {
     {
         Vector3[] pathNodes = new Vector3[2];
 
+        if (endPos.y < Camera.main.transform.position.y - 1.0f)
+            endPos.y = Camera.main.transform.position.y - 1.0f;
+
         if (!stay)
-            pathNodes[1] = endPos * ((endPos.magnitude - 0.3f) / endPos.magnitude);
+            pathNodes[1] = endPos * ((endPos.magnitude - 0.1f) / endPos.magnitude);
         else
             pathNodes[1] = endPos;
 
         //pathNodes[1] = endPos * ((endPos.magnitude - 0.09f) / endPos.magnitude); 
 
-        pathNodes[0] = pathNodes[1] * 0.8f;
+        pathNodes[0] = pathNodes[1] * 0.9f;
 
         toHold.Kill();
         
