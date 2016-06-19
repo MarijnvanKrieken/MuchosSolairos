@@ -38,7 +38,13 @@ public class Telekinesis: MonoBehaviour
 					cursor.color = Color.black;
 					return;
 				}
-				if(hitInfo1.collider.GetComponent<HoldableObject>() != null)
+                if (hitInfo1.transform.tag == "Button")
+                {
+                    cursor.color = Color.black;
+                    return;
+                }
+
+                if (hitInfo1.collider.GetComponent<HoldableObject>() != null)
 				{
 					cursor.color = Color.black;
 
@@ -92,6 +98,9 @@ public class Telekinesis: MonoBehaviour
                     if (hitInfo.collider.gameObject == holdingObject)
 						return;
 
+                    if (hitInfo.collider.tag == "Button")
+                        if (hitInfo.collider.GetComponent<BeginButton>())
+                            hitInfo.collider.GetComponent<BeginButton>().ActivateButton();
 
                     holdingObject.transform.parent = null;
 
