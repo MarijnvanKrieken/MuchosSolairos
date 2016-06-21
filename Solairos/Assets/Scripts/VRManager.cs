@@ -46,27 +46,12 @@ public class VRManager : MonoBehaviour
 
 	public void CardboardSwitch()
 	{
-		if(stereoscopic)
-		{
-			//change back to main camera
-			stereoscopic = false;
-			mainCam.enabled = true;
-			mainUICam.enabled = true;
-			leftEye.SetActive(false);
-			rightEye.SetActive(false);
-			leftUIEye.SetActive(false);
-			rightUIEye.SetActive(false);
-		}
-		else
-		{
-			//change to 2 cameras
-			stereoscopic = false;
-			mainCam.enabled = false;
-			mainUICam.enabled = false;
-			leftEye.SetActive(true);
-			rightEye.SetActive(true);
-			leftUIEye.SetActive(true);
-			rightUIEye.SetActive(true);
-		}
+		stereoscopic = !stereoscopic;
+		mainCam.enabled = stereoscopic;
+		mainUICam.enabled = stereoscopic;
+		leftEye.SetActive(!stereoscopic);
+		rightEye.SetActive(!stereoscopic);
+		leftUIEye.SetActive(!stereoscopic);
+		rightUIEye.SetActive(!stereoscopic);
 	}
 }
