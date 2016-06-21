@@ -72,7 +72,7 @@ public class DiskManager: MonoBehaviour
 		if(Input.GetMouseButtonDown(0))
 		{
 			RaycastHit hit;
-			if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 20.0f))
+			if(Physics.Raycast(VRManager.MainCam.transform.position, VRManager.MainCam.transform.forward, out hit, 20.0f))
 			{
 				//customDebug.AddDebug("ray cast");
 				if(canRotate)

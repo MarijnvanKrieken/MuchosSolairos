@@ -6,12 +6,12 @@ public class Telekinesis: MonoBehaviour
 
 	[SerializeField]
 	Image cursor;
-    
-    [SerializeField]
-    ParticleSystem clouds;
 
-    [SerializeField]
-    GameObject poofParticle;
+	[SerializeField]
+	ParticleSystem clouds;
+
+	[SerializeField]
+	GameObject poofParticle;
 
 	GameObject holdingObject = null;
 	private CustomDebug customDebug;
@@ -21,7 +21,7 @@ public class Telekinesis: MonoBehaviour
 	void Start()
 	{
 		customDebug = FindObjectOfType<CustomDebug>();
-        
+
 	}
 
 	void CursorColor()
@@ -29,36 +29,36 @@ public class Telekinesis: MonoBehaviour
 		//cursor
 		RaycastHit hitInfo1;
 
-		if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), out hitInfo1, 200.0f))
+		if(Physics.Raycast(VRManager.MainCam.transform.position, VRManager.MainCam.transform.TransformDirection(Vector3.forward), out hitInfo1, 200.0f))
 		{
 			//when not holding object
 			if(holdingObject == null)
 			{
 				if(hitInfo1.transform.tag == "Gear")
 				{
-                    cursor.color = Color.cyan;
-                    return;
+					cursor.color = Color.cyan;
+					return;
 				}
 
 				if(hitInfo1.transform.tag == "Rune")
 				{
-                    cursor.color = Color.cyan;
-                    return;
+					cursor.color = Color.cyan;
+					return;
 				}
 				if(hitInfo1.transform.tag == "Button")
 				{
-                    cursor.color = Color.cyan;
-                    return;
+					cursor.color = Color.cyan;
+					return;
 				}
 				if(hitInfo1.transform.tag == "Bell")
 				{
-                    cursor.color = Color.cyan;
-                    return;
+					cursor.color = Color.cyan;
+					return;
 				}
 
 				if(hitInfo1.collider.GetComponent<HoldableObject>() != null)
 				{
-                    cursor.color = Color.cyan;
+					cursor.color = Color.cyan;
 
 					return;
 				}
@@ -67,13 +67,13 @@ public class Telekinesis: MonoBehaviour
 			{
 				if(hitInfo1.collider.gameObject != holdingObject)
 				{
-                    cursor.color = Color.blue;
-                    return;
+					cursor.color = Color.blue;
+					return;
 				}
 			}
 		}
-        //else
-        
+		//else
+
 		cursor.color = Color.white;
 	}
 
@@ -86,17 +86,17 @@ public class Telekinesis: MonoBehaviour
 		{
 			RaycastHit hitInfo;
 
-			if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), out hitInfo, 200.0f))
+			if(Physics.Raycast(VRManager.MainCam.transform.position, VRManager.MainCam.transform.TransformDirection(Vector3.forward), out hitInfo, 200.0f))
 			{
 				if(hitInfo.collider.GetComponent<HoldableObject>() && holdingObject == null)
 				{
 					holdingObject = hitInfo.collider.GetComponent<HoldableObject>().gameObject;
-					holdingObject.transform.parent = Camera.main.transform.GetChild(0).transform;
+					holdingObject.transform.parent = VRManager.MainCam.transform.GetChild(0).transform;
 					holdingObject.GetComponent<HoldableObject>().SendToHold();
 
-                    clouds.transform.SetParent(holdingObject.transform);
-                    clouds.transform.localPosition = Vector3.zero;
-                    clouds.Play();
+					clouds.transform.SetParent(holdingObject.transform);
+					clouds.transform.localPosition = Vector3.zero;
+					clouds.Play();
 				}
 				else if(holdingObject != null)
 				{
@@ -119,17 +119,17 @@ public class Telekinesis: MonoBehaviour
 					}
 					holdingObject.GetComponent<HoldableObject>().SendBack(sendToPlace, stayAfter);
 					holdingObject = null;
-                    clouds.Stop();
+					clouds.Stop();
 				}
 
 				if(hitInfo.collider.tag == "Button")
 					if(hitInfo.collider.GetComponent<BeginButton>())
 						hitInfo.collider.GetComponent<BeginButton>().ActivateButton();
 
-                if (holdingObject == null)
-                {
-                    Instantiate(poofParticle, hitInfo.point, Quaternion.identity);
-                }
+				if(holdingObject == null)
+				{
+					Instantiate(poofParticle, hitInfo.point, Quaternion.identity);
+				}
 			}
 
 

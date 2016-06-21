@@ -11,7 +11,7 @@ public class RuneManager: MonoBehaviour
 	public List<GameObject> clickedNotes;
 	public GameObject stoneDrag;
 	public GameObject stoneHit;
-    public Finish End;
+	public Finish End;
 
 	public Rigidbody ear1;
 	public Rigidbody ear2;
@@ -40,7 +40,7 @@ public class RuneManager: MonoBehaviour
 		if(Input.GetMouseButtonDown(0))
 		{
 			RaycastHit hit;
-			if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 20.0f))
+			if(Physics.Raycast(VRManager.MainCam.transform.position, VRManager.MainCam.transform.forward, out hit, 20.0f))
 			{
 				if(hit.transform.gameObject.layer == LayerMask.NameToLayer("Runes") && rotationSpeed == 0f)
 				{
@@ -57,7 +57,7 @@ public class RuneManager: MonoBehaviour
 						MonkeySound.Play();
 						ear1.constraints = RigidbodyConstraints.None;
 						ear2.constraints = RigidbodyConstraints.None;
-                        End.EarsDone();
+						End.EarsDone();
 					});
 					//debug.AddDebug("Bell sound played");
 				}
