@@ -28,6 +28,8 @@ public class VRManager : MonoBehaviour
 		instance = this;
 	}
 
+#if UNITY_ANDROID
+
 	void Start ()
 	{
 		if (VRSettings.enabled)
@@ -54,4 +56,5 @@ public class VRManager : MonoBehaviour
 		leftUIEye.SetActive(!stereoscopic);
 		rightUIEye.SetActive(!stereoscopic);
 	}
+#endif
 }
