@@ -2878,22 +2878,6 @@ Prefab:
       propertyPath: cardboardButton
       value: 
       objectReference: {fileID: 448082117}
-    - target: {fileID: 11488820, guid: e152b2aee189f2f4786449a8ccdc8943, type: 2}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11488820, guid: e152b2aee189f2f4786449a8ccdc8943, type: 2}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11488820, guid: e152b2aee189f2f4786449a8ccdc8943, type: 2}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11488820, guid: e152b2aee189f2f4786449a8ccdc8943, type: 2}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e152b2aee189f2f4786449a8ccdc8943, type: 2}
   m_IsPrefabParent: 0

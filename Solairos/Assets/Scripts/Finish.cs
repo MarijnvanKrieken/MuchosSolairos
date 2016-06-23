@@ -29,28 +29,28 @@ public class Finish: MonoBehaviour
 			return;
 
 		done = true;
-		debug.AddDebug("all done");
+		//debug.AddDebug("all done");
 	}
 
 	public void MouthDone()
 	{
 		mouth = true;
 		CheckBools();
-		debug.AddDebug("mouth done");
+		//debug.AddDebug("mouth done");
 	}
 
 	public void EyesDone()
 	{
 		eyes = true;
 		CheckBools();
-		debug.AddDebug("eyes done");
+		//debug.AddDebug("eyes done");
 	}
 
 	public void EarsDone()
 	{
 		ears = true;
 		CheckBools();
-		debug.AddDebug("ears done");
+		//debug.AddDebug("ears done");
 	}
 
 	// Update is called once per frame
