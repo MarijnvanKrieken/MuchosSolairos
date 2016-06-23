@@ -11,7 +11,7 @@ public class RuneManager: MonoBehaviour
 	public List<GameObject> clickedNotes;
 	public GameObject stoneDrag;
 	public GameObject stoneHit;
-	public Finish End;
+	public Finish finish;
 
 	public Rigidbody ear1;
 	public Rigidbody ear2;
@@ -57,7 +57,10 @@ public class RuneManager: MonoBehaviour
 						MonkeySound.Play();
 						ear1.constraints = RigidbodyConstraints.None;
 						ear2.constraints = RigidbodyConstraints.None;
-						End.EarsDone();
+					});
+					DOVirtual.DelayedCall(2.0f, () =>
+					{
+						finish.EarsDone();
 					});
 					//debug.AddDebug("Bell sound played");
 				}

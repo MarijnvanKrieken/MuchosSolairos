@@ -17,6 +17,7 @@ public class DiskManager: MonoBehaviour
 	public Image cursor;
 	public AudioSource stonesound;
 	public GameObject Banana;
+	public Finish finish;
 
 	private Tween gear1Tween;
 	private Tween gear2Tween;

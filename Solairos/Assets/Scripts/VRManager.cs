@@ -29,7 +29,6 @@ public class VRManager : MonoBehaviour
 	}
 
 #if UNITY_ANDROID
-
 	void Start ()
 	{
 		if (VRSettings.enabled)

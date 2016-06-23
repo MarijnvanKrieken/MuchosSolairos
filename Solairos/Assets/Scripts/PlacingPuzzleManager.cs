@@ -5,7 +5,6 @@ using UnityEngine.Events;
 
 public class PlacingPuzzleManager: MonoBehaviour
 {
-
 	[Serializable]
 	public class MyEventType: UnityEvent { }
 	public MyEventType OnPuzzleFinished;
@@ -20,6 +19,8 @@ public class PlacingPuzzleManager: MonoBehaviour
 	public Transform RightHand;
 
 	public Transform eyeLightSource;
+
+	public Finish finish;
 
 	private bool finished = false;
 
@@ -37,7 +38,6 @@ public class PlacingPuzzleManager: MonoBehaviour
 	public void WinConditionWeird()
 	{
 		//t.position += Vector3.up * 0.5f;
-
 		eyeLightSource.DOMoveZ(-0.1f, 1f);
 		DOVirtual.DelayedCall(1f, () =>
 		{
@@ -51,6 +51,11 @@ public class PlacingPuzzleManager: MonoBehaviour
 			 RightHand.DORotate(new Vector3(0, -180, 0), 2f);
 			 RightHand.DOMoveX(0.5f, 2f);
 		 });
+		DOVirtual.DelayedCall(3f, () =>
+		{
+			finish.EyesDone();
+		});
+
 	}
 
 	private void HoldableObjectManager_Arrived()
@@ -67,13 +72,9 @@ public class PlacingPuzzleManager: MonoBehaviour
 
 			if(isInPlace == false)
 				return;
-
-
 		}
 
-
 		OnPuzzleFinished.Invoke();
-
 		for(int i = 0; i < puzzlePlaces.Length; i++)
 		{
 			puzzlePlaces[i].enabled = false;
